@@ -1,0 +1,37 @@
+.cookes_main_block{
+  display: flex;
+  margin: 20px 0;
+  font-size: 0.85rem;
+}
+
+.cookes_left_block{
+  width: 100%;
+}
+
+.cookes_left_block a{
+  padding-left: 5px;
+}
+
+.cookes_right_block{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.manage_cookes_btn{
+  background-color: transparent;
+  border: none;
+  color: gray;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.accent_cookes_btn{
+  font-weight: 500;
+  background-color: white;
+  border: 1px solid rgb(6, 102, 235);
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 15px;
+  color: rgb(6, 102, 235);
+}
