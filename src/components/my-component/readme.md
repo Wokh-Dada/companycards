@@ -18,7 +18,7 @@
 
 ### Depends on
 
-- [pre-header](../pre-header)
+- [pre-header](../res/view/pre-header)
 
 ### Graph
 ```mermaid

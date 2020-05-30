@@ -1,0 +1,67 @@
+.multy_currency_title_block {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.multy_currency_title h3 {
+  font-weight: 600;
+}
+
+.multy_currency_subtitle {
+  text-align: center;
+  font-weight: 500;
+  color: #8f9193;
+}
+
+.multy_currency_subtitle a {
+  color: rgb(0, 117, 235);
+  padding: 0 5px;
+}
+
+.multy_currency_subtitle a:hover {
+  text-decoration: none;
+  color: #0056fb;
+}
+
+.multi_currency_carusel_preBlock {
+  padding-top: 40px;
+  max-width: 2400px;
+}
+
+.multi_currency_carusel{
+  position: absolute;
+}
+
+.slaider_before{
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  bottom: 0px;
+  width: 10rem;
+  z-index: 1;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0px, rgba(255, 255, 255, 0) 100%);
+}
+
+#multi_currency_carusel_one_position{
+  position: relative;
+  transition: all ease 2s;
+}
+
+#multi_currency_carusel_two_position{
+  position: relative;
+  transition: all ease 10s;
+}
+
+
+.multi_currency_carusel_icon {
+  flex-shrink: 0;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 1.5rem;
+  margin-right: 2rem;
+  border-radius: 1.5rem;
+}
+
+
+
+
+

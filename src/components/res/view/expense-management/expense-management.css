@@ -1,0 +1,55 @@
+.expense_management{
+
+}
+
+.expense_management_block{
+  margin-top: 150px;
+}
+
+.expense_management_list_block{
+  margin-right: 145px;
+}
+
+.expense_management_left{
+  position: relative;
+  right: 25px;
+}
+
+.expense_management_bckgrnd{
+  background-image: url("https://assets.revolut.com/media/business/corporate-cards/features/feature-expenses.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 485px;
+  box-shadow: rgba(25, 28, 31, 0.08) 0px 14px 32px, rgba(25, 28, 31, 0.04) 0px 8px 16px, rgba(25, 28, 31, 0.04) 0px -1px 0px;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 995px) {
+  .expense_management{
+    display: flex;
+    justify-content: center;
+  }
+
+  .expense_management_block{
+    max-width: 474px;
+  }
+
+  .expense_management_list_block{
+    margin-top: 50px;
+  }
+
+  .expense_management_list_block {
+    margin-right: 0;
+  }
+
+  .expense_management_left {
+    right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .persional_security_list_block {
+    margin-left: 10px;
+  }
+}

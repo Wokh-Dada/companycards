@@ -3,7 +3,7 @@
 }
 
 .container{
-  max-width: 1280px;
+  max-width: 1376px;
   margin: auto;
 }
 
@@ -37,9 +37,31 @@ button{
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   text-decoration: none;
+  box-sizing: border-box;
 }
 /*button*/
 
+.topThreeBlocks{
+  background-color: #f5f6f8;
+}
+
+/*****header*******/
+
+.header_btn, .presentation_btn{
+  background-color: #0056fb;
+  border-radius: 9px;
+  color: white;
+  margin-left: -20px;
+  border: 2px solid #0056fb;
+  padding: 12px;
+  height: 45px;
+  width: 125px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+/*****header*******/
 
 
 @media (min-width: 576px) {

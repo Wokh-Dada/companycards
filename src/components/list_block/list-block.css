@@ -1,0 +1,33 @@
+.list_block{
+}
+
+.list_block_title h3{
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.list_block_info_blocks{
+  padding: 10px 0 0 0;
+}
+
+.list_block ul li{
+  list-style: none;
+  padding: 0 0 0 20px;
+  color: rgb(139, 149, 158);
+  line-height: 1.65;
+}
+
+.list_block_info_block::before{
+  content: "\f14a";
+  position: relative;
+  right: 25px;
+  top: 25px;
+  font-family: Font Awesome\ 5 Free, serif;
+  color: rgb(0, 117, 235);
+}
+
+.list_block_info_block a{
+  color: rgb(0, 117, 235);
+}
+
+

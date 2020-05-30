@@ -1,0 +1,69 @@
+.card_design_block {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.card_design_block_title h2 {
+  font-size: 2.875rem !important;
+  line-height: 3.5rem !important;
+  font-weight: 600;
+}
+
+.card_design_block_subtitle {
+  line-height: 1.65em;
+  color: rgb(139, 149, 158);
+  margin: 1rem 0;
+}
+
+.card_design_block_card_img {
+  margin: 4rem auto 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card_img {
+  background-size: cover;
+  background-position: center;
+  width: 608px;
+  height: 381px;
+  box-shadow: rgba(25, 28, 31, 0.08) 0px 14px 32px, rgba(25, 28, 31, 0.04) 0px 8px 16px, rgba(25, 28, 31, 0.04) 0px -1px 0px !important;
+  border-radius: 23px;
+}
+
+#black_card{
+  background-image: url("https://assets.revolut.com/media/business/businesscard_black.jpg");
+}
+
+#white_card{
+  background-image: url("https://assets.revolut.com/media/business/businesscard_white.jpg");
+}
+
+.black_card_btn_border, .gray_card_btn_border {
+  margin: 0 3px;
+  border: 1px solid black;
+  align-items: center;
+  display: inline-flex;
+  border-radius: 24px;
+  justify-content: center;
+  width: 36px;
+}
+
+.black_card_btn, .gray_card_btn {
+  background-color: black;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.black_card_btn {
+  background-color: black;
+}
+
+.gray_card_btn {
+  background-color: gray;
+}
+
+

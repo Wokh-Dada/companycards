@@ -1,6 +1,10 @@
+.cookes_main_block_bckrnd{
+  background: rgb(243, 244, 245);
+}
+
 .cookes_main_block{
   display: flex;
-  margin: 20px 0;
+  padding: 20px 0;
   font-size: 0.85rem;
 }
 
@@ -28,7 +32,7 @@
 
 .accent_cookes_btn{
   font-weight: 500;
-  background-color: white;
+  background-color: #f5f6f8;;
   border: 1px solid rgb(6, 102, 235);
   height: 40px;
   padding: 0 30px;

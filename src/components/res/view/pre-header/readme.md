@@ -9,7 +9,7 @@
 
 ### Used by
 
- - [my-component](../my-component)
+ - [my-component](../../../my-component)
 
 ### Graph
 ```mermaid

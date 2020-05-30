@@ -1,4 +1,6 @@
-import {Component, h, Prop} from '@stencil/core';
+import {Component, h} from '@stencil/core';
+import {exploreFeatures, otherFeatures, previewBackground} from "../../utils/mock";
+
 
 @Component({
   tag: 'my-component',
@@ -6,26 +8,31 @@ import {Component, h, Prop} from '@stencil/core';
   shadow: false
 })
 export class MyComponent {
-  /**
-   * The first name
-   */
-  @Prop() first: string;
+  preHeader = false;
+  public close(){
 
-  /**
-   * The middle name
-   */
-  @Prop() middle: string;
-
-  /**
-   * The last name
-   */
-  @Prop() last: string;
+    this.preHeader = true;
+  }
 
   render() {
     return (
       <div class="m-0 p-0">
-        <pre-header/>
-        <app-header/>
+        <div class="topThreeBlocks">
+          {this.preHeader ? '': <pre-header onClose={() => this.close()}/>}
+          <s-abdullakh-header/>
+          <product-presentation/>
+        </div>
+        <multi-currency-slaider/>
+        <personal-security />
+        <expense-management/>
+        <clause-match/>
+        <security-control/>
+        <card-design/>
+        <other-features featuresblock={otherFeatures.featuresblock}/>
+        <explore-features exploreFeatures={exploreFeatures.exploreFeaturesblock}/>
+        <link-block/>
+        <icons-block previewBackground={previewBackground.previewBackgroundBlock}/>
+        <footer-block/>
       </div>
     );
   }

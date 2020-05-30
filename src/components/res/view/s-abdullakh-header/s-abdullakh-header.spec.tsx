@@ -1,18 +1,18 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { AppHeader } from './app-header';
+import { SAbdullakhHeader } from './s-abdullakh-header';
 
-describe('app-header', () => {
+describe('s-abdullakh-header', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [AppHeader],
-      html: `<app-header></app-header>`,
+      components: [SAbdullakhHeader],
+      html: `<s-abdullakh-header></s-abdullakh-header>`,
     });
     expect(page.root).toEqualHtml(`
-      <app-header>
+      <s-abdullakh-header>
         <mock:shadow-root>
           <slot></slot>
         </mock:shadow-root>
-      </app-header>
+      </s-abdullakh-header>
     `);
   });
 });
