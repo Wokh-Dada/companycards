@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h} from '@stencil/core';
+import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 import {personalSecurity} from "../../../../utils/mock";
 
 @Component({
@@ -7,6 +7,7 @@ import {personalSecurity} from "../../../../utils/mock";
   shadow: false,
 })
 export class ListBlock implements ComponentInterface {
+  @Prop() personalSecurity: any[];
 
   render() {
     return (

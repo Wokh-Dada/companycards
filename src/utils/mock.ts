@@ -1,5 +1,113 @@
 export let preHeader = false;
 
+export const headNav = [
+  {nameLink: "Pricing", complited: false},
+  {
+    nameLink: "Product",
+    complited: true,
+    popup: [
+      {
+        popupTitle: "Features",
+        popupTitleComplited: true
+      },
+      {
+        popupItemName: "Product tour",
+        popupIcon: "public",
+        popupIconComplited: true,
+      },
+      {
+        popupItemName: "Account",
+        popupIcon: "account_balance_wallet",
+        popupIconComplited: true,
+      },
+      {
+        popupItemName: "Payments",
+        popupIcon: "swap_horiz",
+        popupIconComplited: true,
+      },
+      {
+        popupItemName: "Company cards",
+        popupIcon: "credit_card",
+        popupIconComplited: true,
+      },
+      {
+        popupItemName: "Roles & Permissions",
+        popupIcon: "https",
+        popupIconComplited: true,
+      },
+      {
+        popupItemName: "Mobile app",
+        popupIcon: "stay_primary_portrait",
+        popupIconComplited: true,
+      },
+      {
+        popupItemName: "Security",
+        popupIcon: "security",
+        popupIconComplited: true,
+      },
+      {
+        popupItemName: "Perks",
+        popupIcon: "card_giftcard",
+        popupIconComplited: true,
+      },
+      {
+        popupTitle: "Features",
+        popupTitleComplited: true
+      },
+      {
+        popupItemName: "For accountants",
+        popupIcon: "event_note",
+        popupIconComplited: true,
+      }
+
+    ]
+  },
+  {
+    nameLink: "Resources",
+    complited: true,
+    popup: [
+      {
+        popupItemName: "Blog",
+        popupIconComplited: false,
+      },
+      {
+        popupItemName: "Community",
+        popupIconComplited: false,
+      },
+      {
+        popupItemName: "Help centre",
+        popupIconComplited: false,
+      },
+      {
+        popupItemName: "Webinar",
+        popupIconComplited: false,
+      }
+    ]
+  },
+  {
+    nameLink: "Company",
+    complited: true,
+    popup: [
+      {
+        popupItemName: "About",
+        popupIconComplited: false,
+      },
+      {
+        popupItemName: "Careers",
+        popupIconComplited: false,
+      },
+      {
+        popupItemName: "Affiates",
+        popupIconComplited: false,
+      },
+      {
+        popupItemName: "Contact cards",
+        popupIconComplited: false,
+      }
+    ]
+  }
+]
+
 export const personalSecurity = {
   list: {
     text: [

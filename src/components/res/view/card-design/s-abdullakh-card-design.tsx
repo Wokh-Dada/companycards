@@ -1,11 +1,11 @@
 import {Component, ComponentInterface, h} from '@stencil/core';
 
 @Component({
-  tag: 'card-design',
-  styleUrl: 'card-design.css',
+  tag: 's-abdullakh-card-design',
+  styleUrl: 's-abdullakh-card-design.css',
   shadow: false,
 })
-export class CardDesign implements ComponentInterface {
+export class SAbdullakhCardDesign implements ComponentInterface {
   card: HTMLElement;
 
   public blackCardtoggle(){

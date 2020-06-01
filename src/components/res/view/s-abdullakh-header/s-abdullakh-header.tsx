@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h} from '@stencil/core';
+import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-header',
@@ -6,6 +6,7 @@ import {Component, ComponentInterface, h} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhHeader implements ComponentInterface {
+  @Prop() headNav: any[];
 
   navOpenTag: HTMLElement;
   navMenuTag: HTMLElement;
@@ -20,8 +21,33 @@ export class SAbdullakhHeader implements ComponentInterface {
 
   render() {
 
+    // window.addEventListener('scroll', function() {
+    //   let scrollTop = document.body.scrollTop;
+    //
+    //   if(scrollTop > 150) {
+    //     document.getElementById('showScroll').className = 'menu_scroll';
+    //   } else {
+    //     document.getElementById('showScroll').className = 'menu_sticky';
+    //   }
+    //
+    // });
+
+    // let el = document.querySelector('.showScroll');
+    //
+    // window.addEventListener('scroll', toggleClassOnScroll.bind(el, 150));
+    //
+    // function toggleClassOnScroll(pxAmount) {
+    //   let scrollTop = document.body.scrollTop;
+    //
+    //   if(scrollTop > pxAmount) {
+    //     this.classList.add('menu_scroll');
+    //   } else {
+    //     this.classList.remove('menu_scroll');
+    //   }
+    // }
+
     return (
-      <header class="container-fluid menu_sticky">
+      <header class="container-fluid menu_sticky" id="showScroll">
         <div class="container">
           <div class="row main__menu px-0 mx-0">
             <div class="col-auto pr-0 mr-0">
@@ -29,6 +55,9 @@ export class SAbdullakhHeader implements ComponentInterface {
                 <a href="#" class="navbar-brand"/>
               </div>
             </div>
+
+            {/*<s-abdullakh-head-menu headNav={this.headNav}/>*/}
+
             <div class="col mr-0 pr-0">
               <a href="#" id="menu" class="menu_icon" ref={(el) => {this.navOpenTag = el}} onClick={() => this.toggleMobileMenu()}>
                 &#9776;

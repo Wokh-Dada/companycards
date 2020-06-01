@@ -6,8 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface CardDesign {
-    }
     interface ClauseMatch {
     }
     interface ExpenseManagement {
@@ -36,23 +34,24 @@ export namespace Components {
         "featuresblock": any[];
     }
     interface PersonalSecurity {
+        "personalSecurity": any[];
     }
     interface PreHeader {
     }
     interface ProductPresentation {
     }
+    interface SAbdullakhCardDesign {
+    }
+    interface SAbdullakhHeadMenu {
+        "headNav": any[];
+    }
     interface SAbdullakhHeader {
+        "headNav": any[];
     }
     interface SecurityControl {
     }
 }
 declare global {
-    interface HTMLCardDesignElement extends Components.CardDesign, HTMLStencilElement {
-    }
-    var HTMLCardDesignElement: {
-        prototype: HTMLCardDesignElement;
-        new (): HTMLCardDesignElement;
-    };
     interface HTMLClauseMatchElement extends Components.ClauseMatch, HTMLStencilElement {
     }
     var HTMLClauseMatchElement: {
@@ -137,6 +136,18 @@ declare global {
         prototype: HTMLProductPresentationElement;
         new (): HTMLProductPresentationElement;
     };
+    interface HTMLSAbdullakhCardDesignElement extends Components.SAbdullakhCardDesign, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhCardDesignElement: {
+        prototype: HTMLSAbdullakhCardDesignElement;
+        new (): HTMLSAbdullakhCardDesignElement;
+    };
+    interface HTMLSAbdullakhHeadMenuElement extends Components.SAbdullakhHeadMenu, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhHeadMenuElement: {
+        prototype: HTMLSAbdullakhHeadMenuElement;
+        new (): HTMLSAbdullakhHeadMenuElement;
+    };
     interface HTMLSAbdullakhHeaderElement extends Components.SAbdullakhHeader, HTMLStencilElement {
     }
     var HTMLSAbdullakhHeaderElement: {
@@ -150,7 +161,6 @@ declare global {
         new (): HTMLSecurityControlElement;
     };
     interface HTMLElementTagNameMap {
-        "card-design": HTMLCardDesignElement;
         "clause-match": HTMLClauseMatchElement;
         "expense-management": HTMLExpenseManagementElement;
         "explore-features": HTMLExploreFeaturesElement;
@@ -165,13 +175,13 @@ declare global {
         "personal-security": HTMLPersonalSecurityElement;
         "pre-header": HTMLPreHeaderElement;
         "product-presentation": HTMLProductPresentationElement;
+        "s-abdullakh-card-design": HTMLSAbdullakhCardDesignElement;
+        "s-abdullakh-head-menu": HTMLSAbdullakhHeadMenuElement;
         "s-abdullakh-header": HTMLSAbdullakhHeaderElement;
         "security-control": HTMLSecurityControlElement;
     }
 }
 declare namespace LocalJSX {
-    interface CardDesign {
-    }
     interface ClauseMatch {
     }
     interface ExpenseManagement {
@@ -200,18 +210,24 @@ declare namespace LocalJSX {
         "featuresblock"?: any[];
     }
     interface PersonalSecurity {
+        "personalSecurity"?: any[];
     }
     interface PreHeader {
         "onClose"?: (event: CustomEvent<any>) => void;
     }
     interface ProductPresentation {
     }
+    interface SAbdullakhCardDesign {
+    }
+    interface SAbdullakhHeadMenu {
+        "headNav"?: any[];
+    }
     interface SAbdullakhHeader {
+        "headNav"?: any[];
     }
     interface SecurityControl {
     }
     interface IntrinsicElements {
-        "card-design": CardDesign;
         "clause-match": ClauseMatch;
         "expense-management": ExpenseManagement;
         "explore-features": ExploreFeatures;
@@ -226,6 +242,8 @@ declare namespace LocalJSX {
         "personal-security": PersonalSecurity;
         "pre-header": PreHeader;
         "product-presentation": ProductPresentation;
+        "s-abdullakh-card-design": SAbdullakhCardDesign;
+        "s-abdullakh-head-menu": SAbdullakhHeadMenu;
         "s-abdullakh-header": SAbdullakhHeader;
         "security-control": SecurityControl;
     }
@@ -234,7 +252,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "card-design": LocalJSX.CardDesign & JSXBase.HTMLAttributes<HTMLCardDesignElement>;
             "clause-match": LocalJSX.ClauseMatch & JSXBase.HTMLAttributes<HTMLClauseMatchElement>;
             "expense-management": LocalJSX.ExpenseManagement & JSXBase.HTMLAttributes<HTMLExpenseManagementElement>;
             "explore-features": LocalJSX.ExploreFeatures & JSXBase.HTMLAttributes<HTMLExploreFeaturesElement>;
@@ -249,6 +266,8 @@ declare module "@stencil/core" {
             "personal-security": LocalJSX.PersonalSecurity & JSXBase.HTMLAttributes<HTMLPersonalSecurityElement>;
             "pre-header": LocalJSX.PreHeader & JSXBase.HTMLAttributes<HTMLPreHeaderElement>;
             "product-presentation": LocalJSX.ProductPresentation & JSXBase.HTMLAttributes<HTMLProductPresentationElement>;
+            "s-abdullakh-card-design": LocalJSX.SAbdullakhCardDesign & JSXBase.HTMLAttributes<HTMLSAbdullakhCardDesignElement>;
+            "s-abdullakh-head-menu": LocalJSX.SAbdullakhHeadMenu & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuElement>;
             "s-abdullakh-header": LocalJSX.SAbdullakhHeader & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderElement>;
             "security-control": LocalJSX.SecurityControl & JSXBase.HTMLAttributes<HTMLSecurityControlElement>;
         }
