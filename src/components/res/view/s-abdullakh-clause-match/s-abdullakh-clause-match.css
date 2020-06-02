@@ -1,0 +1,109 @@
+.clause_match{
+
+}
+
+.clause_match_block{
+  margin-top: 150px;
+}
+
+.clause_match_block_contest{
+  font-weight: 500;
+  margin-left: 80px;
+  padding-right: 140px;
+  color: rgb(139, 149, 158);
+  line-height: 2rem;
+}
+
+.block_name{
+  font-size: 30px;
+  color: #468ce3;
+}
+
+.clause_match_block_left_block svg{
+  color: #e8ebef;
+  position: relative;
+  right: 75px;
+  top: 42px;
+}
+
+.clause_match_block_left_block h3{
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  color: #212529;
+  font-weight: 600;
+}
+
+.clause_match_left_block_text{
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.clause_match_left_block_author{
+  margin-top: 2.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.clause_match_left_block_author span{
+  font-weight: 600;
+}
+
+.clause_match_right_block{
+  background-image: url("https://assets.revolut.com/media/business/corporate-cards/testimonial.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 485px;
+  box-shadow: rgba(25, 28, 31, 0.08) 0px 14px 32px, rgba(25, 28, 31, 0.04) 0px 8px 16px, rgba(25, 28, 31, 0.04) 0px -1px 0px;
+  border-radius: 0.5rem;
+}
+
+
+@media (max-width: 995px) {
+  .clause_match_block_left_block h3 {
+    font-size: 1.50rem;
+  }
+
+  .clause_match_left_block_text {
+    font-size: 17px;
+  }
+
+  .clause_match_left_block_author {
+    font-size: 17px;
+  }
+
+  .block_name {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 995px) {
+  .clause_match{
+    display: flex;
+    justify-content: center;
+  }
+
+  .clause_match_block{
+    max-width: 474px;
+  }
+
+  .clause_match_block_contest{
+    margin-top: 50px;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .expense_management_list_block {
+    margin-right: 0;
+  }
+
+  .expense_management_left {
+    right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .persional_security_list_block {
+    margin-left: 10px;
+  }
+}

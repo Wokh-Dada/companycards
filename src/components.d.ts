@@ -6,41 +6,18 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface ClauseMatch {
-    }
-    interface ExpenseManagement {
-    }
-    interface ExploreFeatures {
-        "exploreFeatures": any[];
-    }
-    interface FooterBlock {
-    }
-    interface IconsBlock {
-        "previewBackground": any[];
-    }
-    interface LinkBlock {
-    }
-    interface ListBlock {
-        "text": any[];
-        "titl": any[];
-    }
-    interface ListBlockBckgrnd {
-    }
-    interface MultiCurrencySlaider {
-    }
     interface MyComponent {
     }
-    interface OtherFeatures {
-        "featuresblock": any[];
-    }
-    interface PersonalSecurity {
-        "personalSecurity": any[];
-    }
-    interface PreHeader {
-    }
-    interface ProductPresentation {
-    }
     interface SAbdullakhCardDesign {
+    }
+    interface SAbdullakhClauseMatch {
+    }
+    interface SAbdullakhExpenseManagement {
+    }
+    interface SAbdullakhExploreFeatures {
+        "exploreFeatures": any[];
+    }
+    interface SAbdullakhFooterBlock {
     }
     interface SAbdullakhHeadMenu {
         "headNav": any[];
@@ -48,99 +25,66 @@ export namespace Components {
     interface SAbdullakhHeader {
         "headNav": any[];
     }
-    interface SecurityControl {
+    interface SAbdullakhIconsBlock {
+        "previewBackground": any[];
+    }
+    interface SAbdullakhLinkBlock {
+    }
+    interface SAbdullakhListBlock {
+        "text": any[];
+        "titl": any[];
+    }
+    interface SAbdullakhMultiCurrencySlaider {
+    }
+    interface SAbdullakhOtherFeatures {
+        "featuresblock": any[];
+    }
+    interface SAbdullakhPersonalSecurity {
+        "personalSecurity": any[];
+    }
+    interface SAbdullakhPreHeader {
+    }
+    interface SAbdullakhProductPresentation {
+    }
+    interface SAbdullakhSecurityControl {
     }
 }
 declare global {
-    interface HTMLClauseMatchElement extends Components.ClauseMatch, HTMLStencilElement {
-    }
-    var HTMLClauseMatchElement: {
-        prototype: HTMLClauseMatchElement;
-        new (): HTMLClauseMatchElement;
-    };
-    interface HTMLExpenseManagementElement extends Components.ExpenseManagement, HTMLStencilElement {
-    }
-    var HTMLExpenseManagementElement: {
-        prototype: HTMLExpenseManagementElement;
-        new (): HTMLExpenseManagementElement;
-    };
-    interface HTMLExploreFeaturesElement extends Components.ExploreFeatures, HTMLStencilElement {
-    }
-    var HTMLExploreFeaturesElement: {
-        prototype: HTMLExploreFeaturesElement;
-        new (): HTMLExploreFeaturesElement;
-    };
-    interface HTMLFooterBlockElement extends Components.FooterBlock, HTMLStencilElement {
-    }
-    var HTMLFooterBlockElement: {
-        prototype: HTMLFooterBlockElement;
-        new (): HTMLFooterBlockElement;
-    };
-    interface HTMLIconsBlockElement extends Components.IconsBlock, HTMLStencilElement {
-    }
-    var HTMLIconsBlockElement: {
-        prototype: HTMLIconsBlockElement;
-        new (): HTMLIconsBlockElement;
-    };
-    interface HTMLLinkBlockElement extends Components.LinkBlock, HTMLStencilElement {
-    }
-    var HTMLLinkBlockElement: {
-        prototype: HTMLLinkBlockElement;
-        new (): HTMLLinkBlockElement;
-    };
-    interface HTMLListBlockElement extends Components.ListBlock, HTMLStencilElement {
-    }
-    var HTMLListBlockElement: {
-        prototype: HTMLListBlockElement;
-        new (): HTMLListBlockElement;
-    };
-    interface HTMLListBlockBckgrndElement extends Components.ListBlockBckgrnd, HTMLStencilElement {
-    }
-    var HTMLListBlockBckgrndElement: {
-        prototype: HTMLListBlockBckgrndElement;
-        new (): HTMLListBlockBckgrndElement;
-    };
-    interface HTMLMultiCurrencySlaiderElement extends Components.MultiCurrencySlaider, HTMLStencilElement {
-    }
-    var HTMLMultiCurrencySlaiderElement: {
-        prototype: HTMLMultiCurrencySlaiderElement;
-        new (): HTMLMultiCurrencySlaiderElement;
-    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
-    interface HTMLOtherFeaturesElement extends Components.OtherFeatures, HTMLStencilElement {
-    }
-    var HTMLOtherFeaturesElement: {
-        prototype: HTMLOtherFeaturesElement;
-        new (): HTMLOtherFeaturesElement;
-    };
-    interface HTMLPersonalSecurityElement extends Components.PersonalSecurity, HTMLStencilElement {
-    }
-    var HTMLPersonalSecurityElement: {
-        prototype: HTMLPersonalSecurityElement;
-        new (): HTMLPersonalSecurityElement;
-    };
-    interface HTMLPreHeaderElement extends Components.PreHeader, HTMLStencilElement {
-    }
-    var HTMLPreHeaderElement: {
-        prototype: HTMLPreHeaderElement;
-        new (): HTMLPreHeaderElement;
-    };
-    interface HTMLProductPresentationElement extends Components.ProductPresentation, HTMLStencilElement {
-    }
-    var HTMLProductPresentationElement: {
-        prototype: HTMLProductPresentationElement;
-        new (): HTMLProductPresentationElement;
-    };
     interface HTMLSAbdullakhCardDesignElement extends Components.SAbdullakhCardDesign, HTMLStencilElement {
     }
     var HTMLSAbdullakhCardDesignElement: {
         prototype: HTMLSAbdullakhCardDesignElement;
         new (): HTMLSAbdullakhCardDesignElement;
+    };
+    interface HTMLSAbdullakhClauseMatchElement extends Components.SAbdullakhClauseMatch, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhClauseMatchElement: {
+        prototype: HTMLSAbdullakhClauseMatchElement;
+        new (): HTMLSAbdullakhClauseMatchElement;
+    };
+    interface HTMLSAbdullakhExpenseManagementElement extends Components.SAbdullakhExpenseManagement, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhExpenseManagementElement: {
+        prototype: HTMLSAbdullakhExpenseManagementElement;
+        new (): HTMLSAbdullakhExpenseManagementElement;
+    };
+    interface HTMLSAbdullakhExploreFeaturesElement extends Components.SAbdullakhExploreFeatures, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhExploreFeaturesElement: {
+        prototype: HTMLSAbdullakhExploreFeaturesElement;
+        new (): HTMLSAbdullakhExploreFeaturesElement;
+    };
+    interface HTMLSAbdullakhFooterBlockElement extends Components.SAbdullakhFooterBlock, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhFooterBlockElement: {
+        prototype: HTMLSAbdullakhFooterBlockElement;
+        new (): HTMLSAbdullakhFooterBlockElement;
     };
     interface HTMLSAbdullakhHeadMenuElement extends Components.SAbdullakhHeadMenu, HTMLStencilElement {
     }
@@ -154,70 +98,93 @@ declare global {
         prototype: HTMLSAbdullakhHeaderElement;
         new (): HTMLSAbdullakhHeaderElement;
     };
-    interface HTMLSecurityControlElement extends Components.SecurityControl, HTMLStencilElement {
+    interface HTMLSAbdullakhIconsBlockElement extends Components.SAbdullakhIconsBlock, HTMLStencilElement {
     }
-    var HTMLSecurityControlElement: {
-        prototype: HTMLSecurityControlElement;
-        new (): HTMLSecurityControlElement;
+    var HTMLSAbdullakhIconsBlockElement: {
+        prototype: HTMLSAbdullakhIconsBlockElement;
+        new (): HTMLSAbdullakhIconsBlockElement;
+    };
+    interface HTMLSAbdullakhLinkBlockElement extends Components.SAbdullakhLinkBlock, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhLinkBlockElement: {
+        prototype: HTMLSAbdullakhLinkBlockElement;
+        new (): HTMLSAbdullakhLinkBlockElement;
+    };
+    interface HTMLSAbdullakhListBlockElement extends Components.SAbdullakhListBlock, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhListBlockElement: {
+        prototype: HTMLSAbdullakhListBlockElement;
+        new (): HTMLSAbdullakhListBlockElement;
+    };
+    interface HTMLSAbdullakhMultiCurrencySlaiderElement extends Components.SAbdullakhMultiCurrencySlaider, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhMultiCurrencySlaiderElement: {
+        prototype: HTMLSAbdullakhMultiCurrencySlaiderElement;
+        new (): HTMLSAbdullakhMultiCurrencySlaiderElement;
+    };
+    interface HTMLSAbdullakhOtherFeaturesElement extends Components.SAbdullakhOtherFeatures, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhOtherFeaturesElement: {
+        prototype: HTMLSAbdullakhOtherFeaturesElement;
+        new (): HTMLSAbdullakhOtherFeaturesElement;
+    };
+    interface HTMLSAbdullakhPersonalSecurityElement extends Components.SAbdullakhPersonalSecurity, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhPersonalSecurityElement: {
+        prototype: HTMLSAbdullakhPersonalSecurityElement;
+        new (): HTMLSAbdullakhPersonalSecurityElement;
+    };
+    interface HTMLSAbdullakhPreHeaderElement extends Components.SAbdullakhPreHeader, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhPreHeaderElement: {
+        prototype: HTMLSAbdullakhPreHeaderElement;
+        new (): HTMLSAbdullakhPreHeaderElement;
+    };
+    interface HTMLSAbdullakhProductPresentationElement extends Components.SAbdullakhProductPresentation, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhProductPresentationElement: {
+        prototype: HTMLSAbdullakhProductPresentationElement;
+        new (): HTMLSAbdullakhProductPresentationElement;
+    };
+    interface HTMLSAbdullakhSecurityControlElement extends Components.SAbdullakhSecurityControl, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhSecurityControlElement: {
+        prototype: HTMLSAbdullakhSecurityControlElement;
+        new (): HTMLSAbdullakhSecurityControlElement;
     };
     interface HTMLElementTagNameMap {
-        "clause-match": HTMLClauseMatchElement;
-        "expense-management": HTMLExpenseManagementElement;
-        "explore-features": HTMLExploreFeaturesElement;
-        "footer-block": HTMLFooterBlockElement;
-        "icons-block": HTMLIconsBlockElement;
-        "link-block": HTMLLinkBlockElement;
-        "list-block": HTMLListBlockElement;
-        "list-block-bckgrnd": HTMLListBlockBckgrndElement;
-        "multi-currency-slaider": HTMLMultiCurrencySlaiderElement;
         "my-component": HTMLMyComponentElement;
-        "other-features": HTMLOtherFeaturesElement;
-        "personal-security": HTMLPersonalSecurityElement;
-        "pre-header": HTMLPreHeaderElement;
-        "product-presentation": HTMLProductPresentationElement;
         "s-abdullakh-card-design": HTMLSAbdullakhCardDesignElement;
+        "s-abdullakh-clause-match": HTMLSAbdullakhClauseMatchElement;
+        "s-abdullakh-expense-management": HTMLSAbdullakhExpenseManagementElement;
+        "s-abdullakh-explore-features": HTMLSAbdullakhExploreFeaturesElement;
+        "s-abdullakh-footer-block": HTMLSAbdullakhFooterBlockElement;
         "s-abdullakh-head-menu": HTMLSAbdullakhHeadMenuElement;
         "s-abdullakh-header": HTMLSAbdullakhHeaderElement;
-        "security-control": HTMLSecurityControlElement;
+        "s-abdullakh-icons-block": HTMLSAbdullakhIconsBlockElement;
+        "s-abdullakh-link-block": HTMLSAbdullakhLinkBlockElement;
+        "s-abdullakh-list-block": HTMLSAbdullakhListBlockElement;
+        "s-abdullakh-multi-currency-slaider": HTMLSAbdullakhMultiCurrencySlaiderElement;
+        "s-abdullakh-other-features": HTMLSAbdullakhOtherFeaturesElement;
+        "s-abdullakh-personal-security": HTMLSAbdullakhPersonalSecurityElement;
+        "s-abdullakh-pre-header": HTMLSAbdullakhPreHeaderElement;
+        "s-abdullakh-product-presentation": HTMLSAbdullakhProductPresentationElement;
+        "s-abdullakh-security-control": HTMLSAbdullakhSecurityControlElement;
     }
 }
 declare namespace LocalJSX {
-    interface ClauseMatch {
-    }
-    interface ExpenseManagement {
-    }
-    interface ExploreFeatures {
-        "exploreFeatures"?: any[];
-    }
-    interface FooterBlock {
-    }
-    interface IconsBlock {
-        "previewBackground"?: any[];
-    }
-    interface LinkBlock {
-    }
-    interface ListBlock {
-        "text"?: any[];
-        "titl"?: any[];
-    }
-    interface ListBlockBckgrnd {
-    }
-    interface MultiCurrencySlaider {
-    }
     interface MyComponent {
     }
-    interface OtherFeatures {
-        "featuresblock"?: any[];
-    }
-    interface PersonalSecurity {
-        "personalSecurity"?: any[];
-    }
-    interface PreHeader {
-        "onClose"?: (event: CustomEvent<any>) => void;
-    }
-    interface ProductPresentation {
-    }
     interface SAbdullakhCardDesign {
+    }
+    interface SAbdullakhClauseMatch {
+    }
+    interface SAbdullakhExpenseManagement {
+    }
+    interface SAbdullakhExploreFeatures {
+        "exploreFeatures"?: any[];
+    }
+    interface SAbdullakhFooterBlock {
     }
     interface SAbdullakhHeadMenu {
         "headNav"?: any[];
@@ -225,51 +192,71 @@ declare namespace LocalJSX {
     interface SAbdullakhHeader {
         "headNav"?: any[];
     }
-    interface SecurityControl {
+    interface SAbdullakhIconsBlock {
+        "previewBackground"?: any[];
+    }
+    interface SAbdullakhLinkBlock {
+    }
+    interface SAbdullakhListBlock {
+        "text"?: any[];
+        "titl"?: any[];
+    }
+    interface SAbdullakhMultiCurrencySlaider {
+    }
+    interface SAbdullakhOtherFeatures {
+        "featuresblock"?: any[];
+    }
+    interface SAbdullakhPersonalSecurity {
+        "personalSecurity"?: any[];
+    }
+    interface SAbdullakhPreHeader {
+        "onClose"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhProductPresentation {
+    }
+    interface SAbdullakhSecurityControl {
     }
     interface IntrinsicElements {
-        "clause-match": ClauseMatch;
-        "expense-management": ExpenseManagement;
-        "explore-features": ExploreFeatures;
-        "footer-block": FooterBlock;
-        "icons-block": IconsBlock;
-        "link-block": LinkBlock;
-        "list-block": ListBlock;
-        "list-block-bckgrnd": ListBlockBckgrnd;
-        "multi-currency-slaider": MultiCurrencySlaider;
         "my-component": MyComponent;
-        "other-features": OtherFeatures;
-        "personal-security": PersonalSecurity;
-        "pre-header": PreHeader;
-        "product-presentation": ProductPresentation;
         "s-abdullakh-card-design": SAbdullakhCardDesign;
+        "s-abdullakh-clause-match": SAbdullakhClauseMatch;
+        "s-abdullakh-expense-management": SAbdullakhExpenseManagement;
+        "s-abdullakh-explore-features": SAbdullakhExploreFeatures;
+        "s-abdullakh-footer-block": SAbdullakhFooterBlock;
         "s-abdullakh-head-menu": SAbdullakhHeadMenu;
         "s-abdullakh-header": SAbdullakhHeader;
-        "security-control": SecurityControl;
+        "s-abdullakh-icons-block": SAbdullakhIconsBlock;
+        "s-abdullakh-link-block": SAbdullakhLinkBlock;
+        "s-abdullakh-list-block": SAbdullakhListBlock;
+        "s-abdullakh-multi-currency-slaider": SAbdullakhMultiCurrencySlaider;
+        "s-abdullakh-other-features": SAbdullakhOtherFeatures;
+        "s-abdullakh-personal-security": SAbdullakhPersonalSecurity;
+        "s-abdullakh-pre-header": SAbdullakhPreHeader;
+        "s-abdullakh-product-presentation": SAbdullakhProductPresentation;
+        "s-abdullakh-security-control": SAbdullakhSecurityControl;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "clause-match": LocalJSX.ClauseMatch & JSXBase.HTMLAttributes<HTMLClauseMatchElement>;
-            "expense-management": LocalJSX.ExpenseManagement & JSXBase.HTMLAttributes<HTMLExpenseManagementElement>;
-            "explore-features": LocalJSX.ExploreFeatures & JSXBase.HTMLAttributes<HTMLExploreFeaturesElement>;
-            "footer-block": LocalJSX.FooterBlock & JSXBase.HTMLAttributes<HTMLFooterBlockElement>;
-            "icons-block": LocalJSX.IconsBlock & JSXBase.HTMLAttributes<HTMLIconsBlockElement>;
-            "link-block": LocalJSX.LinkBlock & JSXBase.HTMLAttributes<HTMLLinkBlockElement>;
-            "list-block": LocalJSX.ListBlock & JSXBase.HTMLAttributes<HTMLListBlockElement>;
-            "list-block-bckgrnd": LocalJSX.ListBlockBckgrnd & JSXBase.HTMLAttributes<HTMLListBlockBckgrndElement>;
-            "multi-currency-slaider": LocalJSX.MultiCurrencySlaider & JSXBase.HTMLAttributes<HTMLMultiCurrencySlaiderElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
-            "other-features": LocalJSX.OtherFeatures & JSXBase.HTMLAttributes<HTMLOtherFeaturesElement>;
-            "personal-security": LocalJSX.PersonalSecurity & JSXBase.HTMLAttributes<HTMLPersonalSecurityElement>;
-            "pre-header": LocalJSX.PreHeader & JSXBase.HTMLAttributes<HTMLPreHeaderElement>;
-            "product-presentation": LocalJSX.ProductPresentation & JSXBase.HTMLAttributes<HTMLProductPresentationElement>;
             "s-abdullakh-card-design": LocalJSX.SAbdullakhCardDesign & JSXBase.HTMLAttributes<HTMLSAbdullakhCardDesignElement>;
+            "s-abdullakh-clause-match": LocalJSX.SAbdullakhClauseMatch & JSXBase.HTMLAttributes<HTMLSAbdullakhClauseMatchElement>;
+            "s-abdullakh-expense-management": LocalJSX.SAbdullakhExpenseManagement & JSXBase.HTMLAttributes<HTMLSAbdullakhExpenseManagementElement>;
+            "s-abdullakh-explore-features": LocalJSX.SAbdullakhExploreFeatures & JSXBase.HTMLAttributes<HTMLSAbdullakhExploreFeaturesElement>;
+            "s-abdullakh-footer-block": LocalJSX.SAbdullakhFooterBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhFooterBlockElement>;
             "s-abdullakh-head-menu": LocalJSX.SAbdullakhHeadMenu & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuElement>;
             "s-abdullakh-header": LocalJSX.SAbdullakhHeader & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderElement>;
-            "security-control": LocalJSX.SecurityControl & JSXBase.HTMLAttributes<HTMLSecurityControlElement>;
+            "s-abdullakh-icons-block": LocalJSX.SAbdullakhIconsBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhIconsBlockElement>;
+            "s-abdullakh-link-block": LocalJSX.SAbdullakhLinkBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhLinkBlockElement>;
+            "s-abdullakh-list-block": LocalJSX.SAbdullakhListBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhListBlockElement>;
+            "s-abdullakh-multi-currency-slaider": LocalJSX.SAbdullakhMultiCurrencySlaider & JSXBase.HTMLAttributes<HTMLSAbdullakhMultiCurrencySlaiderElement>;
+            "s-abdullakh-other-features": LocalJSX.SAbdullakhOtherFeatures & JSXBase.HTMLAttributes<HTMLSAbdullakhOtherFeaturesElement>;
+            "s-abdullakh-personal-security": LocalJSX.SAbdullakhPersonalSecurity & JSXBase.HTMLAttributes<HTMLSAbdullakhPersonalSecurityElement>;
+            "s-abdullakh-pre-header": LocalJSX.SAbdullakhPreHeader & JSXBase.HTMLAttributes<HTMLSAbdullakhPreHeaderElement>;
+            "s-abdullakh-product-presentation": LocalJSX.SAbdullakhProductPresentation & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationElement>;
+            "s-abdullakh-security-control": LocalJSX.SAbdullakhSecurityControl & JSXBase.HTMLAttributes<HTMLSAbdullakhSecurityControlElement>;
         }
     }
 }

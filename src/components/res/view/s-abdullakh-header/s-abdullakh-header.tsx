@@ -62,7 +62,7 @@ export class SAbdullakhHeader implements ComponentInterface {
               <a href="#" id="menu" class="menu_icon" ref={(el) => {this.navOpenTag = el}} onClick={() => this.toggleMobileMenu()}>
                 &#9776;
               </a>
-              <div class="navbar_block" id="dNone">
+              <div class="navbar_block" id="dNone" ref={(el) => {this.navMenuTag = el}}>
                 <a href="#" id="menu" class="menu_icon_x" onClick={() => this.toggleMobileMenu()}>
                   X
                 </a>

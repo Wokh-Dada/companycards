@@ -18,21 +18,21 @@ export class MyComponent {
     return (
       <div class="m-0 p-0">
         <div class="topThreeBlocks">
-          {this.preHeader ? '': <pre-header onClose={() => this.close()}/>}
+          {this.preHeader ? '': <s-abdullakh-pre-header onClose={() => this.close()}/>}
           <s-abdullakh-header headNav={headNav}/>
-          <product-presentation/>
+          <s-abdullakh-product-presentation/>
         </div>
-        <multi-currency-slaider/>
-        <personal-security />
-        <expense-management/>
-        <clause-match/>
-        <security-control/>
+        <s-abdullakh-multi-currency-slaider/>
+        <s-abdullakh-personal-security />
+        <s-abdullakh-expense-management/>
+        <s-abdullakh-clause-match/>
+        <s-abdullakh-security-control/>
         <s-abdullakh-card-design/>
-        <other-features featuresblock={otherFeatures.featuresblock}/>
-        <explore-features exploreFeatures={exploreFeatures.exploreFeaturesblock}/>
-        <link-block/>
-        <icons-block previewBackground={previewBackground.previewBackgroundBlock}/>
-        <footer-block/>
+        <s-abdullakh-other-features featuresblock={otherFeatures.featuresblock}/>
+        <s-abdullakh-explore-features exploreFeatures={exploreFeatures.exploreFeaturesblock}/>
+        <s-abdullakh-link-block/>
+        <s-abdullakh-icons-block previewBackground={previewBackground.previewBackgroundBlock}/>
+        <s-abdullakh-footer-block/>
       </div>
     );
   }
