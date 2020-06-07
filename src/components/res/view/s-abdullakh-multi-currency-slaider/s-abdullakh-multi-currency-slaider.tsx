@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h} from '@stencil/core';
+import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-multi-currency-slaider',
@@ -6,6 +6,8 @@ import {Component, ComponentInterface, h} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhMultiCurrencySlaider implements ComponentInterface {
+
+  @Prop() multiCurrencySlaider: string
 
   render() {
     // autoSlider();
@@ -40,24 +42,21 @@ export class SAbdullakhMultiCurrencySlaider implements ComponentInterface {
       <div class="container">
         <div class="multy_currency_title_block">
           <div class="multy_currency_title h3Title">
-            <h3>
+            <h3 >
               Save money with our multi-currency company cards
             </h3>
           </div>
-          <div class="multy_currency_subtitle">
+          <div class="multy_currency_subtitle" >
             Global spending without the hidden FX fees. Spend money with our physical and virtual
             <br/>
             cards at the
-            <a href="#">
+            <a >
               interbank exchange rate
             </a>
             in over 150 currencies
           </div>
           <div class="multi_currency_carusel_preBlock">
             <div class="multi_currency_carusel_block">
-              {/*<span class="slaider_before">*/}
-
-              {/*</span>*/}
               <div class="multi_currency_carusel" id="multi_currency_carusel_one_position">
                 <svg width="3rem" height="3rem" class="multi_currency_carusel_icon" viewBox="0 0 90 90" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"

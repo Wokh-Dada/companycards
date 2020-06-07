@@ -11,10 +11,10 @@ export class SAbdullakhHeader implements ComponentInterface {
   navOpenTag: HTMLElement;
   navMenuTag: HTMLElement;
 
-  public toggleMobileMenu(){
-    if (this.navMenuTag.id === "dNone"){
+  public toggleMobileMenu() {
+    if (this.navMenuTag.id === "dNone") {
       this.navMenuTag.id = 'dFlex';
-    }else {
+    } else {
       this.navMenuTag.id = 'dNone';
     }
   }
@@ -51,18 +51,32 @@ export class SAbdullakhHeader implements ComponentInterface {
         <div class="container">
           <div class="row main__menu px-0 mx-0">
             <div class="col-auto pr-0 mr-0">
-              <div class="logo" >
+              <div class="logo">
                 <a href="#" class="navbar-brand"/>
               </div>
             </div>
+            <div  class="col mr-0 pr-0">
+              <s-abdullakh-head-menu headNav={this.headNav}/>
+            </div>
+          </div>
+        </div>
 
-            {/*<s-abdullakh-head-menu headNav={this.headNav}/>*/}
-
+        <div class="container">
+          <div class="row main__menu px-0 mx-0">
+            <div class="col-auto pr-0 mr-0">
+              <div class="logo">
+                <a href="#" class="navbar-brand"/>
+              </div>
+            </div>
             <div class="col mr-0 pr-0">
-              <a href="#" id="menu" class="menu_icon" ref={(el) => {this.navOpenTag = el}} onClick={() => this.toggleMobileMenu()}>
+              <a href="#" id="menu" class="menu_icon" ref={(el) => {
+                this.navOpenTag = el
+              }} onClick={() => this.toggleMobileMenu()}>
                 &#9776;
               </a>
-              <div class="navbar_block" id="dNone" ref={(el) => {this.navMenuTag = el}}>
+              <div class="navbar_block" id="dNone" ref={(el) => {
+                this.navMenuTag = el
+              }}>
                 <a href="#" id="menu" class="menu_icon_x" onClick={() => this.toggleMobileMenu()}>
                   X
                 </a>
@@ -120,7 +134,7 @@ export class SAbdullakhHeader implements ComponentInterface {
                               </div>
                               <div class="pop_up_section_nav_link ml-4">
                                 <a href="#" class="pop_up_section_nav_link_a">
-                                 <span class="material-icons">local_airport</span>
+                                  <span class="material-icons">local_airport</span>
                                   API & Integretions
                                 </a>
                               </div>
@@ -150,7 +164,7 @@ export class SAbdullakhHeader implements ComponentInterface {
                               <div class="pop_up_section_nav_block">
                                 <div class="pop_up_section_nav_link">
                                   <a href="#" class="pop_up_section_nav_link_a">
-                                  <span class="material-icons">event_note</span>
+                                    <span class="material-icons">event_note</span>
                                     For accountants
                                   </a>
                                 </div>
@@ -241,5 +255,6 @@ export class SAbdullakhHeader implements ComponentInterface {
       </header>
     );
   }
-
 }
+
+

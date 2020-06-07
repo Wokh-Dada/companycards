@@ -1,5 +1,4 @@
-import { Component, ComponentInterface, h } from '@stencil/core';
-import {securityControl} from "../../../../utils/mock";
+import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-security-control',
@@ -7,6 +6,15 @@ import {securityControl} from "../../../../utils/mock";
   shadow: false,
 })
 export class SAbdullakhSecurityControl implements ComponentInterface {
+  /**
+   * массив personalSecurity
+   * */
+  @Prop() securityControlImg: string;
+
+  /**
+   * массив personalSecurity
+   * */
+  @Prop() securityControl: any;
 
   render() {
     return (
@@ -20,16 +28,38 @@ export class SAbdullakhSecurityControl implements ComponentInterface {
           </div>
           <div class="col-lg-5 mt-5">
             <div class="security_control_left d-block d-lg-none">
-              <div class="security_control_bckgrnd">
+              <div
+                class="security_control_bckgrnd"
+                style={{backgroundImage: "url(" + this.securityControlImg + ")"}}
+              >
               </div>
             </div>
             <div class="security_control_list_block">
-              <s-abdullakh-list-block text={securityControl.list.text} titl={securityControl.list.title}/>
+              <div class="list_block">
+                <div class="list_block_title">
+                  <h3>
+                    {this.securityControl.title}
+                  </h3>
+                </div>
+                <ul class="list_block_info_blocks">
+                  <ListBlock arr={this.securityControl.list} />
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     );
   }
+}
 
+/*
+* компонентная функция для вывода элементов news-main-block
+ */
+const ListBlock = (props) => {
+  return props.arr.text.map((item) => {
+    return (
+      <s-abdullakh-list-block arr={item}/>
+    );
+  })
 }

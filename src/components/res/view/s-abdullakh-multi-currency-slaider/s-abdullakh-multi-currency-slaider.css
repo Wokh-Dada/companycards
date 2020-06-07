@@ -14,13 +14,13 @@
 }
 
 .multy_currency_subtitle a {
-  color: rgb(0, 117, 235);
+  color: rgb(0, 117, 235)!important;
   padding: 0 5px;
 }
 
 .multy_currency_subtitle a:hover {
   text-decoration: none;
-  color: #0056fb;
+  color: #0056fb!important;
 }
 
 .multi_currency_carusel_preBlock {

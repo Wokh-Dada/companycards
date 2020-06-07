@@ -27,48 +27,40 @@ export class SAbdullakhHeadMenu implements ComponentInterface {
           <a class="topnav_right_link" href="#">
             {item.nameLink}
           </a>
-          {() => {
-            if (item.complited === true){
-              return(
-                <div class="pop_up_nav_block">
-                  <div class="top_in_pop_up_nav_block">
-                    {() =>{
-                      if (item.popup.popupTitleComplited === true){
-                        return(
-                        <div class="title_top_in_pop_up_nav_block">
-                          {item.popup.popupTitle}
-                        </div>
-                        );
-                      }else {
-                        return false
+          {item.complited ?
+            <div class="pop_up_nav_block">
+              <div class="top_in_pop_up_nav_block">
+                {item.popup.popupTitleComplited ?
+                  < div class="title_top_in_pop_up_nav_block">
+                    {item.popup.popupTitle}
+                  </div> :
+                  ''
+                }
+                <div class="pop_up_section_nav_block">
+                  <div class="pop_up_section_nav_link">
+                    <a href="#" class="pop_up_section_nav_link_a">
+                      {item.popup.popupIconComplited ?
+                        <span class="material-icons">{item.popup.popupIcon}</span> :
+                        ''
                       }
-                    }}
-                    <div class="pop_up_section_nav_block">
-                      <div class="pop_up_section_nav_link">
-                        <a href="#" class="pop_up_section_nav_link_a">
-                          {() =>{
-                            if (item.popup.popupIconComplited === true){
-                              <span class="material-icons">{item.popup.popupIcon}</span>
-                            }
-                          }}
-                          {item.popup.popupItemName}
-                        </a>
-                      </div>
-                    </div>
+                      {item.popup.popupItemName}
+                    </a>
                   </div>
                 </div>
-              );
-            }
-          }}
+              </div>
+            </div> :
+            ''
+          }
         </div>
       );
     })
 
 
-
     return (
-      <div class="col mr-0 pr-0">
-        <a href="#" id="menu" class="menu_icon" ref={(el) => {this.navOpenTag = el}} onClick={() => this.toggleMobileMenu()}>
+      <div >
+        <a href="#" id="menu" class="menu_icon" ref={(el) => {
+          this.navOpenTag = el
+        }} onClick={() => this.toggleMobileMenu()}>
           &#9776;
         </a>
         <div class="navbar_block" id="dNone">
@@ -90,14 +82,14 @@ export class SAbdullakhHeadMenu implements ComponentInterface {
                 <div class="mobile_btn_block">
                   <a href="#" class="logIn">Log in</a>
                   <span>
-                          <div class="header_btn_block">
-                            <div class="input-group-append">
-                              <button class="header_btn">
-                                  Start for free
-                              </button>
-                            </div>
-                          </div>
-                        </span>
+                    <div class="header_btn_block">
+                      <div class="input-group-append">
+                        <button class="header_btn">
+                          Start for free
+                        </button>
+                      </div>
+                    </div>
+                  </span>
                 </div>
               </div>
             </nav>

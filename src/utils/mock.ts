@@ -108,49 +108,76 @@ export const headNav = [
   }
 ]
 
+export const productPresentation = {
+  videoScr: 'https://assets.revolut.com/media/business/corporate-cards/hero_slider.mp4',
+  productPresentationContent: [
+    {
+      title: 'Radically better company cards',
+      subtitle: 'No-fuss company cards for team members, instant virtual cards for security and flexibility — all set up with our easy expense management',
+      btnText: 'Start for free'
+    }
+  ]
+}
+
+export const multiCurrencySlaider = ''
+
 export const personalSecurity = {
+  personalSecurityImg: 'https://assets.revolut.com/media/business/corporate-cards/features/feature-cards.png',
+  title: 'Stay in control over your cards and transactions',
   list: {
     text: [
       {text: 'Order physical cards for your team and create multiple virtual cards instantly'},
       {text: 'Link several  multi-currency accounts to one card or connect multiple cards to a single account'},
       {text: 'Set monthly limits and get statements with transactions for each card separately'},
       {text: 'Easily track transactions and control cards activity by employees, including automated notifications'}
-    ],
-    title: [
-      {title: 'Stay in control over your cards and transactions'}
     ]
   }
 }
 
 export const expenseManagement = {
+  expenseManagementImg: 'https://assets.revolut.com/media/business/corporate-cards/features/feature-cards.png',
+  title: 'Eliminate stress from accounting with expense management',
   list: {
     text: [
       {text: 'Card holders can upload receipts and choose categories in the mobile app, as well as receive automatic reminders about missing information'},
       {text: 'Accountants and administrators can instantly review expenses in a live feed and reject or approve them'},
       {text: 'Organise expenses with categories and tax rates. Import details from Xero or define them manually'},
       {text: 'Export your expenses as a .csv file to be used on your accounting platform of choice'}
-    ],
-    title: [
-      {title: 'Eliminate stress from accounting with expense management'}
     ]
   }
 }
 
 export const securityControl = {
+  securityControlImg: 'https://assets.revolut.com/media/business/corporate-cards/features/feature-cards.png',
+  title: 'Control the security of your company cards',
   list: {
     text: [
       {text: 'Temporarily freeze missing cards in your app or web dashboard'},
       {text: 'Enable location-based security to reduce fraudulent transactions'},
       {text: 'Disable contactless, online or swipe payments when necessary to ensure your card’s safety'},
       {text: 'Toggle the ability to make cash withdrawals from ATMs for extra security'}
-    ],
-    title: [
-      {title: 'Control the security of your company cards'}
     ]
   }
 }
 
+export const cardDesign ={
+  cardDesignImgWhite: 'https://assets.revolut.com/media/business/businesscard_white.jpg',
+  cardDesignImgBlack: 'https://assets.revolut.com/media/business/businesscard_black.jpg',
+  title: 'Exclusive business card designs',
+  subtitle: 'Choose from our exclusive business card designs.'
+}
+
+export const clauseMatch = {
+  clauseMatchImg: 'https://assets.revolut.com/media/business/corporate-cards/testimonial.png',
+  blockName: 'clausematch',
+  title: 'At ClauseMatch we’ve had a positive experience using Revolut Business.',
+  blockContent: 'The possibility to track and manage employee expenses on a single dashboard makes it a very convenient tool for business use.',
+  author: 'Andrey Dokuchaev',
+  company: 'COO & Co-Founder'
+}
+
 export const otherFeatures = {
+  title: 'Other features coming soon',
   featuresblock: [
     {
       title: 'Disposable virtual cards',
@@ -176,6 +203,7 @@ export const otherFeatures = {
 }
 
 export const exploreFeatures = {
+  title: 'Explore our other features',
   exploreFeaturesblock: [
     {
       title: 'Perks',
@@ -196,6 +224,12 @@ export const exploreFeatures = {
       icon: 'account_balance_wallet'
     }
   ]
+}
+
+export const linkBlock = {
+  title: 'Exclusive business card designs',
+  subtitle: 'Choose from our exclusive business card designs.',
+  btnText: 'Start for free'
 }
 
 export const previewBackground = {

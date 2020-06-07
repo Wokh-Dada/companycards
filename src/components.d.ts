@@ -9,13 +9,26 @@ export namespace Components {
     interface MyComponent {
     }
     interface SAbdullakhCardDesign {
+        "cardDesign": any;
     }
     interface SAbdullakhClauseMatch {
+        "clauseMatch": any;
     }
     interface SAbdullakhExpenseManagement {
+        /**
+          * массив personalSecurity
+         */
+        "expenseManagement": any;
+        /**
+          * массив personalSecurity
+         */
+        "expenseManagementImg": string;
     }
     interface SAbdullakhExploreFeatures {
-        "exploreFeatures": any[];
+        "exploreFeatures": any;
+    }
+    interface SAbdullakhExploreFeaturesBlocks {
+        "arr": any;
     }
     interface SAbdullakhFooterBlock {
     }
@@ -25,28 +38,73 @@ export namespace Components {
     interface SAbdullakhHeader {
         "headNav": any[];
     }
+    interface SAbdullakhIcons {
+        "arr": any;
+    }
     interface SAbdullakhIconsBlock {
         "previewBackground": any[];
     }
     interface SAbdullakhLinkBlock {
+        "linkBlock": any;
     }
     interface SAbdullakhListBlock {
-        "text": any[];
-        "titl": any[];
+        /**
+          * массив ListBlock
+         */
+        "arr": any;
     }
     interface SAbdullakhMultiCurrencySlaider {
+        "multiCurrencySlaider": string;
     }
     interface SAbdullakhOtherFeatures {
-        "featuresblock": any[];
+        "featuresblock": any;
+    }
+    interface SAbdullakhOtherFeaturesBlocks {
+        "arr": any;
     }
     interface SAbdullakhPersonalSecurity {
-        "personalSecurity": any[];
+        /**
+          * массив personalSecurity
+         */
+        "personalSecurity": any;
+        /**
+          * путь к img personalSecurity
+         */
+        "personalSecurityImg": string;
     }
     interface SAbdullakhPreHeader {
     }
     interface SAbdullakhProductPresentation {
+        /**
+          * массив элементов productPresentation
+         */
+        "productPresentation": any;
+    }
+    interface SAbdullakhProductPresentationContent {
+        /**
+          * массив элементов product-presentation-conten
+         */
+        "arr": any;
+        /**
+          * массив элементов product-presentation-conten
+         */
+        "videoScr": string;
+    }
+    interface SAbdullakhProductPresentationVideo {
+        /**
+          * массив элементов productPresentation
+         */
+        "videoScr": any;
     }
     interface SAbdullakhSecurityControl {
+        /**
+          * массив personalSecurity
+         */
+        "securityControl": any;
+        /**
+          * массив personalSecurity
+         */
+        "securityControlImg": string;
     }
 }
 declare global {
@@ -80,6 +138,12 @@ declare global {
         prototype: HTMLSAbdullakhExploreFeaturesElement;
         new (): HTMLSAbdullakhExploreFeaturesElement;
     };
+    interface HTMLSAbdullakhExploreFeaturesBlocksElement extends Components.SAbdullakhExploreFeaturesBlocks, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhExploreFeaturesBlocksElement: {
+        prototype: HTMLSAbdullakhExploreFeaturesBlocksElement;
+        new (): HTMLSAbdullakhExploreFeaturesBlocksElement;
+    };
     interface HTMLSAbdullakhFooterBlockElement extends Components.SAbdullakhFooterBlock, HTMLStencilElement {
     }
     var HTMLSAbdullakhFooterBlockElement: {
@@ -97,6 +161,12 @@ declare global {
     var HTMLSAbdullakhHeaderElement: {
         prototype: HTMLSAbdullakhHeaderElement;
         new (): HTMLSAbdullakhHeaderElement;
+    };
+    interface HTMLSAbdullakhIconsElement extends Components.SAbdullakhIcons, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhIconsElement: {
+        prototype: HTMLSAbdullakhIconsElement;
+        new (): HTMLSAbdullakhIconsElement;
     };
     interface HTMLSAbdullakhIconsBlockElement extends Components.SAbdullakhIconsBlock, HTMLStencilElement {
     }
@@ -128,6 +198,12 @@ declare global {
         prototype: HTMLSAbdullakhOtherFeaturesElement;
         new (): HTMLSAbdullakhOtherFeaturesElement;
     };
+    interface HTMLSAbdullakhOtherFeaturesBlocksElement extends Components.SAbdullakhOtherFeaturesBlocks, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhOtherFeaturesBlocksElement: {
+        prototype: HTMLSAbdullakhOtherFeaturesBlocksElement;
+        new (): HTMLSAbdullakhOtherFeaturesBlocksElement;
+    };
     interface HTMLSAbdullakhPersonalSecurityElement extends Components.SAbdullakhPersonalSecurity, HTMLStencilElement {
     }
     var HTMLSAbdullakhPersonalSecurityElement: {
@@ -146,6 +222,18 @@ declare global {
         prototype: HTMLSAbdullakhProductPresentationElement;
         new (): HTMLSAbdullakhProductPresentationElement;
     };
+    interface HTMLSAbdullakhProductPresentationContentElement extends Components.SAbdullakhProductPresentationContent, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhProductPresentationContentElement: {
+        prototype: HTMLSAbdullakhProductPresentationContentElement;
+        new (): HTMLSAbdullakhProductPresentationContentElement;
+    };
+    interface HTMLSAbdullakhProductPresentationVideoElement extends Components.SAbdullakhProductPresentationVideo, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhProductPresentationVideoElement: {
+        prototype: HTMLSAbdullakhProductPresentationVideoElement;
+        new (): HTMLSAbdullakhProductPresentationVideoElement;
+    };
     interface HTMLSAbdullakhSecurityControlElement extends Components.SAbdullakhSecurityControl, HTMLStencilElement {
     }
     var HTMLSAbdullakhSecurityControlElement: {
@@ -158,17 +246,22 @@ declare global {
         "s-abdullakh-clause-match": HTMLSAbdullakhClauseMatchElement;
         "s-abdullakh-expense-management": HTMLSAbdullakhExpenseManagementElement;
         "s-abdullakh-explore-features": HTMLSAbdullakhExploreFeaturesElement;
+        "s-abdullakh-explore-features-blocks": HTMLSAbdullakhExploreFeaturesBlocksElement;
         "s-abdullakh-footer-block": HTMLSAbdullakhFooterBlockElement;
         "s-abdullakh-head-menu": HTMLSAbdullakhHeadMenuElement;
         "s-abdullakh-header": HTMLSAbdullakhHeaderElement;
+        "s-abdullakh-icons": HTMLSAbdullakhIconsElement;
         "s-abdullakh-icons-block": HTMLSAbdullakhIconsBlockElement;
         "s-abdullakh-link-block": HTMLSAbdullakhLinkBlockElement;
         "s-abdullakh-list-block": HTMLSAbdullakhListBlockElement;
         "s-abdullakh-multi-currency-slaider": HTMLSAbdullakhMultiCurrencySlaiderElement;
         "s-abdullakh-other-features": HTMLSAbdullakhOtherFeaturesElement;
+        "s-abdullakh-other-features-blocks": HTMLSAbdullakhOtherFeaturesBlocksElement;
         "s-abdullakh-personal-security": HTMLSAbdullakhPersonalSecurityElement;
         "s-abdullakh-pre-header": HTMLSAbdullakhPreHeaderElement;
         "s-abdullakh-product-presentation": HTMLSAbdullakhProductPresentationElement;
+        "s-abdullakh-product-presentation-content": HTMLSAbdullakhProductPresentationContentElement;
+        "s-abdullakh-product-presentation-video": HTMLSAbdullakhProductPresentationVideoElement;
         "s-abdullakh-security-control": HTMLSAbdullakhSecurityControlElement;
     }
 }
@@ -176,13 +269,26 @@ declare namespace LocalJSX {
     interface MyComponent {
     }
     interface SAbdullakhCardDesign {
+        "cardDesign"?: any;
     }
     interface SAbdullakhClauseMatch {
+        "clauseMatch"?: any;
     }
     interface SAbdullakhExpenseManagement {
+        /**
+          * массив personalSecurity
+         */
+        "expenseManagement"?: any;
+        /**
+          * массив personalSecurity
+         */
+        "expenseManagementImg"?: string;
     }
     interface SAbdullakhExploreFeatures {
-        "exploreFeatures"?: any[];
+        "exploreFeatures"?: any;
+    }
+    interface SAbdullakhExploreFeaturesBlocks {
+        "arr"?: any;
     }
     interface SAbdullakhFooterBlock {
     }
@@ -192,29 +298,86 @@ declare namespace LocalJSX {
     interface SAbdullakhHeader {
         "headNav"?: any[];
     }
+    interface SAbdullakhIcons {
+        "arr"?: any;
+    }
     interface SAbdullakhIconsBlock {
         "previewBackground"?: any[];
     }
     interface SAbdullakhLinkBlock {
+        "linkBlock"?: any;
     }
     interface SAbdullakhListBlock {
-        "text"?: any[];
-        "titl"?: any[];
+        /**
+          * массив ListBlock
+         */
+        "arr"?: any;
     }
     interface SAbdullakhMultiCurrencySlaider {
+        "multiCurrencySlaider"?: string;
     }
     interface SAbdullakhOtherFeatures {
-        "featuresblock"?: any[];
+        "featuresblock"?: any;
+    }
+    interface SAbdullakhOtherFeaturesBlocks {
+        "arr"?: any;
     }
     interface SAbdullakhPersonalSecurity {
-        "personalSecurity"?: any[];
+        /**
+          * массив personalSecurity
+         */
+        "personalSecurity"?: any;
+        /**
+          * путь к img personalSecurity
+         */
+        "personalSecurityImg"?: string;
     }
     interface SAbdullakhPreHeader {
         "onClose"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhProductPresentation {
+        /**
+          * клик по элементам ProductPresentation
+         */
+        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
+        /**
+          * массив элементов productPresentation
+         */
+        "productPresentation"?: any;
+    }
+    interface SAbdullakhProductPresentationContent {
+        /**
+          * массив элементов product-presentation-conten
+         */
+        "arr"?: any;
+        /**
+          * клик по элементам ProductPresentation
+         */
+        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
+        /**
+          * массив элементов product-presentation-conten
+         */
+        "videoScr"?: string;
+    }
+    interface SAbdullakhProductPresentationVideo {
+        /**
+          * клик по элементам ProductPresentation
+         */
+        "onClickOnProductPresentation"?: (event: CustomEvent<any>) => void;
+        /**
+          * массив элементов productPresentation
+         */
+        "videoScr"?: any;
     }
     interface SAbdullakhSecurityControl {
+        /**
+          * массив personalSecurity
+         */
+        "securityControl"?: any;
+        /**
+          * массив personalSecurity
+         */
+        "securityControlImg"?: string;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
@@ -222,17 +385,22 @@ declare namespace LocalJSX {
         "s-abdullakh-clause-match": SAbdullakhClauseMatch;
         "s-abdullakh-expense-management": SAbdullakhExpenseManagement;
         "s-abdullakh-explore-features": SAbdullakhExploreFeatures;
+        "s-abdullakh-explore-features-blocks": SAbdullakhExploreFeaturesBlocks;
         "s-abdullakh-footer-block": SAbdullakhFooterBlock;
         "s-abdullakh-head-menu": SAbdullakhHeadMenu;
         "s-abdullakh-header": SAbdullakhHeader;
+        "s-abdullakh-icons": SAbdullakhIcons;
         "s-abdullakh-icons-block": SAbdullakhIconsBlock;
         "s-abdullakh-link-block": SAbdullakhLinkBlock;
         "s-abdullakh-list-block": SAbdullakhListBlock;
         "s-abdullakh-multi-currency-slaider": SAbdullakhMultiCurrencySlaider;
         "s-abdullakh-other-features": SAbdullakhOtherFeatures;
+        "s-abdullakh-other-features-blocks": SAbdullakhOtherFeaturesBlocks;
         "s-abdullakh-personal-security": SAbdullakhPersonalSecurity;
         "s-abdullakh-pre-header": SAbdullakhPreHeader;
         "s-abdullakh-product-presentation": SAbdullakhProductPresentation;
+        "s-abdullakh-product-presentation-content": SAbdullakhProductPresentationContent;
+        "s-abdullakh-product-presentation-video": SAbdullakhProductPresentationVideo;
         "s-abdullakh-security-control": SAbdullakhSecurityControl;
     }
 }
@@ -245,17 +413,22 @@ declare module "@stencil/core" {
             "s-abdullakh-clause-match": LocalJSX.SAbdullakhClauseMatch & JSXBase.HTMLAttributes<HTMLSAbdullakhClauseMatchElement>;
             "s-abdullakh-expense-management": LocalJSX.SAbdullakhExpenseManagement & JSXBase.HTMLAttributes<HTMLSAbdullakhExpenseManagementElement>;
             "s-abdullakh-explore-features": LocalJSX.SAbdullakhExploreFeatures & JSXBase.HTMLAttributes<HTMLSAbdullakhExploreFeaturesElement>;
+            "s-abdullakh-explore-features-blocks": LocalJSX.SAbdullakhExploreFeaturesBlocks & JSXBase.HTMLAttributes<HTMLSAbdullakhExploreFeaturesBlocksElement>;
             "s-abdullakh-footer-block": LocalJSX.SAbdullakhFooterBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhFooterBlockElement>;
             "s-abdullakh-head-menu": LocalJSX.SAbdullakhHeadMenu & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuElement>;
             "s-abdullakh-header": LocalJSX.SAbdullakhHeader & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderElement>;
+            "s-abdullakh-icons": LocalJSX.SAbdullakhIcons & JSXBase.HTMLAttributes<HTMLSAbdullakhIconsElement>;
             "s-abdullakh-icons-block": LocalJSX.SAbdullakhIconsBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhIconsBlockElement>;
             "s-abdullakh-link-block": LocalJSX.SAbdullakhLinkBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhLinkBlockElement>;
             "s-abdullakh-list-block": LocalJSX.SAbdullakhListBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhListBlockElement>;
             "s-abdullakh-multi-currency-slaider": LocalJSX.SAbdullakhMultiCurrencySlaider & JSXBase.HTMLAttributes<HTMLSAbdullakhMultiCurrencySlaiderElement>;
             "s-abdullakh-other-features": LocalJSX.SAbdullakhOtherFeatures & JSXBase.HTMLAttributes<HTMLSAbdullakhOtherFeaturesElement>;
+            "s-abdullakh-other-features-blocks": LocalJSX.SAbdullakhOtherFeaturesBlocks & JSXBase.HTMLAttributes<HTMLSAbdullakhOtherFeaturesBlocksElement>;
             "s-abdullakh-personal-security": LocalJSX.SAbdullakhPersonalSecurity & JSXBase.HTMLAttributes<HTMLSAbdullakhPersonalSecurityElement>;
             "s-abdullakh-pre-header": LocalJSX.SAbdullakhPreHeader & JSXBase.HTMLAttributes<HTMLSAbdullakhPreHeaderElement>;
             "s-abdullakh-product-presentation": LocalJSX.SAbdullakhProductPresentation & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationElement>;
+            "s-abdullakh-product-presentation-content": LocalJSX.SAbdullakhProductPresentationContent & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationContentElement>;
+            "s-abdullakh-product-presentation-video": LocalJSX.SAbdullakhProductPresentationVideo & JSXBase.HTMLAttributes<HTMLSAbdullakhProductPresentationVideoElement>;
             "s-abdullakh-security-control": LocalJSX.SAbdullakhSecurityControl & JSXBase.HTMLAttributes<HTMLSAbdullakhSecurityControlElement>;
         }
     }

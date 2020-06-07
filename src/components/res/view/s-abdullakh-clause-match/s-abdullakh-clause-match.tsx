@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h} from '@stencil/core';
+import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 
 
 @Component({
@@ -7,6 +7,8 @@ import {Component, ComponentInterface, h} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhClauseMatch implements ComponentInterface {
+
+  @Prop()clauseMatch: any;
 
   render() {
     return (
@@ -17,7 +19,7 @@ export class SAbdullakhClauseMatch implements ComponentInterface {
             </div>
             <div class="clause_match_block_contest">
               <div class="block_name">
-                clausematch
+                {this.clauseMatch.blockName}
               </div>
               <blockquote class="">
                 <div class="clause_match_block_left_block">
@@ -28,25 +30,26 @@ export class SAbdullakhClauseMatch implements ComponentInterface {
                       fill="currentColor"/>
                   </svg>
                   <h3 class="">
-                    At ClauseMatch we’ve had a positive experience
-                    using Revolut Business.
+                    {this.clauseMatch.title}
                   </h3>
                   <div data-testid="test-quote" class="clause_match_left_block_text">
-                    The possibility to track
-                    and manage employee expenses on a single dashboard makes it a very convenient tool for business use.
+                    {this.clauseMatch.blockContent}
                   </div>
                   <div class="clause_match_left_block_author">
-                    <span class="">
-                      Andrey Dokuchaev
-                    </span>,
-                      COO &amp; Co-Founder
+                    <span class="pr-2">
+                      {this.clauseMatch.author},
+                    </span>
+                    {this.clauseMatch.company}
                   </div>
                 </div>
               </blockquote>
             </div>
           </div>
           <div class="col-lg-5 d-none d-lg-block">
-            <div class="clause_match_right_block">
+            <div
+              class="clause_match_right_block"
+              style={{backgroundImage: "url(" + this.clauseMatch.clauseMatchImg + ")"}}
+            >
             </div>
           </div>
         </div>

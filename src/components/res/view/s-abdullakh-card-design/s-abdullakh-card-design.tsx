@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h} from '@stencil/core';
+import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-card-design',
@@ -6,15 +6,9 @@ import {Component, ComponentInterface, h} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhCardDesign implements ComponentInterface {
+  @Prop()cardDesign: any;
+
   card: HTMLElement;
-
-  public blackCardtoggle(){
-    this.card.id = 'black_card'
-  }
-
-  public whiteCardtoggle(){
-    this.card.id = 'white_card'
-  }
 
   render() {
     return (
@@ -22,10 +16,10 @@ export class SAbdullakhCardDesign implements ComponentInterface {
         <div class="card_design_block">
           <div class="card_design_block_title">
             <h2>
-              Exclusive business card designs
+              {this.cardDesign.title}
             </h2>
             <div class="card_design_block_subtitle">
-              Choose from our exclusive business card designs.
+              {this.cardDesign.subtitle}
             </div>
           </div>
           <div class="card_design_block_card_img">
@@ -47,4 +41,11 @@ export class SAbdullakhCardDesign implements ComponentInterface {
     );
   }
 
+  public blackCardtoggle(){
+    this.card.id = 'black_card'
+  }
+
+  public whiteCardtoggle(){
+    this.card.id = 'white_card'
+  }
 }
