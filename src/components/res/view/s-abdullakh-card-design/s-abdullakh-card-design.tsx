@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-card-design',
@@ -8,6 +8,8 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 export class SAbdullakhCardDesign implements ComponentInterface {
   @Prop()cardDesign: any;
 
+  @Event() clickOnCardDesign: EventEmitter;
+
   card: HTMLElement;
 
   render() {
@@ -15,14 +17,14 @@ export class SAbdullakhCardDesign implements ComponentInterface {
       <div class="container">
         <div class="card_design_block">
           <div class="card_design_block_title">
-            <h2>
+            <h2 onClick={() => this.clickOnCardDesign.emit(this.cardDesign.title)}>
               {this.cardDesign.title}
             </h2>
-            <div class="card_design_block_subtitle">
+            <div class="card_design_block_subtitle" onClick={() => this.clickOnCardDesign.emit(this.cardDesign.subtitle)}>
               {this.cardDesign.subtitle}
             </div>
           </div>
-          <div class="card_design_block_card_img">
+          <div class="card_design_block_card_img" onClick={() => this.clickOnCardDesign.emit(event)}>
             <div class="card_img" id="black_card" ref={(el) => {this.card = el}}>
             </div>
           </div>

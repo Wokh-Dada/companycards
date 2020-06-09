@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-security-control',
@@ -16,13 +16,19 @@ export class SAbdullakhSecurityControl implements ComponentInterface {
    * */
   @Prop() securityControl: any;
 
+  @Event() clickOnSecurityControl: EventEmitter;
+
   render() {
     return (
       <div class="container security_control">
         <div class="row security_control_block">
           <div class="col-lg-7 d-none d-lg-block">
             <div class="security_control_left">
-              <div class="security_control_bckgrnd">
+              <div
+                class="security_control_bckgrnd"
+                style={{backgroundImage: "url(" + this.securityControlImg + ")"}}
+                onClick={() => this.clickOnSecurityControl.emit(this.securityControlImg)}
+              >
               </div>
             </div>
           </div>
@@ -31,17 +37,18 @@ export class SAbdullakhSecurityControl implements ComponentInterface {
               <div
                 class="security_control_bckgrnd"
                 style={{backgroundImage: "url(" + this.securityControlImg + ")"}}
+                onClick={() => this.clickOnSecurityControl.emit(this.securityControlImg)}
               >
               </div>
             </div>
             <div class="security_control_list_block">
               <div class="list_block">
-                <div class="list_block_title">
+                <div class="list_block_title" onClick={() => this.clickOnSecurityControl.emit(this.securityControl.title)}>
                   <h3>
                     {this.securityControl.title}
                   </h3>
                 </div>
-                <ul class="list_block_info_blocks">
+                <ul class="list_block_info_blocks" onClick={() => this.clickOnSecurityControl.emit(this.securityControl.list)}>
                   <ListBlock arr={this.securityControl.list} />
                 </ul>
               </div>

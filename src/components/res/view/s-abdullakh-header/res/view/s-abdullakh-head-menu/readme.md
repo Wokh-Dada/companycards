@@ -16,7 +16,7 @@
 
 ### Used by
 
- - [s-abdullakh-header](../..)
+ - [s-abdullakh-header](../../..)
 
 ### Graph
 ```mermaid

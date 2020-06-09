@@ -28,7 +28,6 @@
 }
 
 .logo {
-  background-image: url("https://48vo7843c3543dkn9cvt8sl1-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/logo.svg");
   width: 150px;
   background-size: cover;
   background-position: center;
@@ -194,7 +193,7 @@
 }
 
 .mobile_btn_block {
-  display: inherit;
+  display: flex;
 }
 
 .menu_icon, .menu_icon_x {

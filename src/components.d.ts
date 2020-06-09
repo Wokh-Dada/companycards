@@ -14,6 +14,9 @@ export namespace Components {
     interface SAbdullakhClauseMatch {
         "clauseMatch": any;
     }
+    interface SAbdullakhClauseMatchContent {
+        "clauseMatch": any;
+    }
     interface SAbdullakhExpenseManagement {
         /**
           * массив personalSecurity
@@ -33,10 +36,48 @@ export namespace Components {
     interface SAbdullakhFooterBlock {
     }
     interface SAbdullakhHeadMenu {
+        /**
+          * массив меню
+         */
         "headNav": any[];
+        /**
+          * массив меню
+         */
+        "headText": any;
+    }
+    interface SAbdullakhHeadMenuInPopup {
+        /**
+          * массив меню в popup
+         */
+        "arr": any;
+    }
+    interface SAbdullakhHeadMenuPopup {
+        /**
+          * массив меню в popup
+         */
+        "arr": any;
+    }
+    interface SAbdullakhHeadNavEnd {
+        /**
+          * массив меню
+         */
+        "headText": any;
+    }
+    interface SAbdullakhHeadNavStart {
+        /**
+          * массив меню
+         */
+        "headText": any;
     }
     interface SAbdullakhHeader {
+        /**
+          * массив меню
+         */
         "headNav": any[];
+        /**
+          * массив меню
+         */
+        "headText": any;
     }
     interface SAbdullakhIcons {
         "arr": any;
@@ -58,6 +99,7 @@ export namespace Components {
     }
     interface SAbdullakhOtherFeatures {
         "featuresblock": any;
+        "otherFeatures": any;
     }
     interface SAbdullakhOtherFeaturesBlocks {
         "arr": any;
@@ -126,6 +168,12 @@ declare global {
         prototype: HTMLSAbdullakhClauseMatchElement;
         new (): HTMLSAbdullakhClauseMatchElement;
     };
+    interface HTMLSAbdullakhClauseMatchContentElement extends Components.SAbdullakhClauseMatchContent, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhClauseMatchContentElement: {
+        prototype: HTMLSAbdullakhClauseMatchContentElement;
+        new (): HTMLSAbdullakhClauseMatchContentElement;
+    };
     interface HTMLSAbdullakhExpenseManagementElement extends Components.SAbdullakhExpenseManagement, HTMLStencilElement {
     }
     var HTMLSAbdullakhExpenseManagementElement: {
@@ -155,6 +203,30 @@ declare global {
     var HTMLSAbdullakhHeadMenuElement: {
         prototype: HTMLSAbdullakhHeadMenuElement;
         new (): HTMLSAbdullakhHeadMenuElement;
+    };
+    interface HTMLSAbdullakhHeadMenuInPopupElement extends Components.SAbdullakhHeadMenuInPopup, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhHeadMenuInPopupElement: {
+        prototype: HTMLSAbdullakhHeadMenuInPopupElement;
+        new (): HTMLSAbdullakhHeadMenuInPopupElement;
+    };
+    interface HTMLSAbdullakhHeadMenuPopupElement extends Components.SAbdullakhHeadMenuPopup, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhHeadMenuPopupElement: {
+        prototype: HTMLSAbdullakhHeadMenuPopupElement;
+        new (): HTMLSAbdullakhHeadMenuPopupElement;
+    };
+    interface HTMLSAbdullakhHeadNavEndElement extends Components.SAbdullakhHeadNavEnd, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhHeadNavEndElement: {
+        prototype: HTMLSAbdullakhHeadNavEndElement;
+        new (): HTMLSAbdullakhHeadNavEndElement;
+    };
+    interface HTMLSAbdullakhHeadNavStartElement extends Components.SAbdullakhHeadNavStart, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhHeadNavStartElement: {
+        prototype: HTMLSAbdullakhHeadNavStartElement;
+        new (): HTMLSAbdullakhHeadNavStartElement;
     };
     interface HTMLSAbdullakhHeaderElement extends Components.SAbdullakhHeader, HTMLStencilElement {
     }
@@ -244,11 +316,16 @@ declare global {
         "my-component": HTMLMyComponentElement;
         "s-abdullakh-card-design": HTMLSAbdullakhCardDesignElement;
         "s-abdullakh-clause-match": HTMLSAbdullakhClauseMatchElement;
+        "s-abdullakh-clause-match-content": HTMLSAbdullakhClauseMatchContentElement;
         "s-abdullakh-expense-management": HTMLSAbdullakhExpenseManagementElement;
         "s-abdullakh-explore-features": HTMLSAbdullakhExploreFeaturesElement;
         "s-abdullakh-explore-features-blocks": HTMLSAbdullakhExploreFeaturesBlocksElement;
         "s-abdullakh-footer-block": HTMLSAbdullakhFooterBlockElement;
         "s-abdullakh-head-menu": HTMLSAbdullakhHeadMenuElement;
+        "s-abdullakh-head-menu-in-popup": HTMLSAbdullakhHeadMenuInPopupElement;
+        "s-abdullakh-head-menu-popup": HTMLSAbdullakhHeadMenuPopupElement;
+        "s-abdullakh-head-nav-end": HTMLSAbdullakhHeadNavEndElement;
+        "s-abdullakh-head-nav-start": HTMLSAbdullakhHeadNavStartElement;
         "s-abdullakh-header": HTMLSAbdullakhHeaderElement;
         "s-abdullakh-icons": HTMLSAbdullakhIconsElement;
         "s-abdullakh-icons-block": HTMLSAbdullakhIconsBlockElement;
@@ -270,9 +347,15 @@ declare namespace LocalJSX {
     }
     interface SAbdullakhCardDesign {
         "cardDesign"?: any;
+        "onClickOnCardDesign"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhClauseMatch {
         "clauseMatch"?: any;
+        "onClickOnClauseMatch"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhClauseMatchContent {
+        "clauseMatch"?: any;
+        "onClickOnClauseMatch"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhExpenseManagement {
         /**
@@ -283,46 +366,137 @@ declare namespace LocalJSX {
           * массив personalSecurity
          */
         "expenseManagementImg"?: string;
+        "onClickOnExpenseManagement"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhExploreFeatures {
         "exploreFeatures"?: any;
+        /**
+          * клик по в компоненте NewSinglePost
+         */
+        "onClickOnExploreFeature"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhExploreFeaturesBlocks {
         "arr"?: any;
+        /**
+          * клик по в компоненте NewSinglePost
+         */
+        "onClickOnExploreFeature"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhFooterBlock {
     }
     interface SAbdullakhHeadMenu {
+        /**
+          * массив меню
+         */
         "headNav"?: any[];
+        /**
+          * массив меню
+         */
+        "headText"?: any;
+        /**
+          * массив меню
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhHeadMenuInPopup {
+        /**
+          * массив меню в popup
+         */
+        "arr"?: any;
+        /**
+          * массив меню
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhHeadMenuPopup {
+        /**
+          * массив меню в popup
+         */
+        "arr"?: any;
+        /**
+          * массив меню
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhHeadNavEnd {
+        /**
+          * массив меню
+         */
+        "headText"?: any;
+        /**
+          * массив меню
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
+    }
+    interface SAbdullakhHeadNavStart {
+        /**
+          * массив меню
+         */
+        "headText"?: any;
+        /**
+          * массив меню
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhHeader {
+        /**
+          * массив меню
+         */
         "headNav"?: any[];
+        /**
+          * массив меню
+         */
+        "headText"?: any;
+        /**
+          * массив меню
+         */
+        "onClickOnHeader"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhIcons {
         "arr"?: any;
     }
     interface SAbdullakhIconsBlock {
+        /**
+          * клик по в компоненте NewSinglePost
+         */
+        "onClickOnIconsBlock"?: (event: CustomEvent<any>) => void;
         "previewBackground"?: any[];
     }
     interface SAbdullakhLinkBlock {
         "linkBlock"?: any;
+        /**
+          * клик по в компоненте NewSinglePost
+         */
+        "onClickOnLinkBlock"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhListBlock {
         /**
           * массив ListBlock
          */
         "arr"?: any;
+        "onClickOnExpenseManagement"?: (event: CustomEvent<any>) => void;
+        "onClickOnPersonalSecurity"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhMultiCurrencySlaider {
         "multiCurrencySlaider"?: string;
     }
     interface SAbdullakhOtherFeatures {
         "featuresblock"?: any;
+        /**
+          * клик по в компоненте NewSinglePost
+         */
+        "onClickOnOtherFeatures"?: (event: CustomEvent<any>) => void;
+        "otherFeatures"?: any;
     }
     interface SAbdullakhOtherFeaturesBlocks {
         "arr"?: any;
+        /**
+          * клик по в компоненте NewSinglePost
+         */
+        "onClickOnOtherFeatures"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhPersonalSecurity {
+        "onClickOnPersonalSecurity"?: (event: CustomEvent<any>) => void;
         /**
           * массив personalSecurity
          */
@@ -370,6 +544,7 @@ declare namespace LocalJSX {
         "videoScr"?: any;
     }
     interface SAbdullakhSecurityControl {
+        "onClickOnSecurityControl"?: (event: CustomEvent<any>) => void;
         /**
           * массив personalSecurity
          */
@@ -383,11 +558,16 @@ declare namespace LocalJSX {
         "my-component": MyComponent;
         "s-abdullakh-card-design": SAbdullakhCardDesign;
         "s-abdullakh-clause-match": SAbdullakhClauseMatch;
+        "s-abdullakh-clause-match-content": SAbdullakhClauseMatchContent;
         "s-abdullakh-expense-management": SAbdullakhExpenseManagement;
         "s-abdullakh-explore-features": SAbdullakhExploreFeatures;
         "s-abdullakh-explore-features-blocks": SAbdullakhExploreFeaturesBlocks;
         "s-abdullakh-footer-block": SAbdullakhFooterBlock;
         "s-abdullakh-head-menu": SAbdullakhHeadMenu;
+        "s-abdullakh-head-menu-in-popup": SAbdullakhHeadMenuInPopup;
+        "s-abdullakh-head-menu-popup": SAbdullakhHeadMenuPopup;
+        "s-abdullakh-head-nav-end": SAbdullakhHeadNavEnd;
+        "s-abdullakh-head-nav-start": SAbdullakhHeadNavStart;
         "s-abdullakh-header": SAbdullakhHeader;
         "s-abdullakh-icons": SAbdullakhIcons;
         "s-abdullakh-icons-block": SAbdullakhIconsBlock;
@@ -411,11 +591,16 @@ declare module "@stencil/core" {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "s-abdullakh-card-design": LocalJSX.SAbdullakhCardDesign & JSXBase.HTMLAttributes<HTMLSAbdullakhCardDesignElement>;
             "s-abdullakh-clause-match": LocalJSX.SAbdullakhClauseMatch & JSXBase.HTMLAttributes<HTMLSAbdullakhClauseMatchElement>;
+            "s-abdullakh-clause-match-content": LocalJSX.SAbdullakhClauseMatchContent & JSXBase.HTMLAttributes<HTMLSAbdullakhClauseMatchContentElement>;
             "s-abdullakh-expense-management": LocalJSX.SAbdullakhExpenseManagement & JSXBase.HTMLAttributes<HTMLSAbdullakhExpenseManagementElement>;
             "s-abdullakh-explore-features": LocalJSX.SAbdullakhExploreFeatures & JSXBase.HTMLAttributes<HTMLSAbdullakhExploreFeaturesElement>;
             "s-abdullakh-explore-features-blocks": LocalJSX.SAbdullakhExploreFeaturesBlocks & JSXBase.HTMLAttributes<HTMLSAbdullakhExploreFeaturesBlocksElement>;
             "s-abdullakh-footer-block": LocalJSX.SAbdullakhFooterBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhFooterBlockElement>;
             "s-abdullakh-head-menu": LocalJSX.SAbdullakhHeadMenu & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuElement>;
+            "s-abdullakh-head-menu-in-popup": LocalJSX.SAbdullakhHeadMenuInPopup & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuInPopupElement>;
+            "s-abdullakh-head-menu-popup": LocalJSX.SAbdullakhHeadMenuPopup & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuPopupElement>;
+            "s-abdullakh-head-nav-end": LocalJSX.SAbdullakhHeadNavEnd & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadNavEndElement>;
+            "s-abdullakh-head-nav-start": LocalJSX.SAbdullakhHeadNavStart & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadNavStartElement>;
             "s-abdullakh-header": LocalJSX.SAbdullakhHeader & JSXBase.HTMLAttributes<HTMLSAbdullakhHeaderElement>;
             "s-abdullakh-icons": LocalJSX.SAbdullakhIcons & JSXBase.HTMLAttributes<HTMLSAbdullakhIconsElement>;
             "s-abdullakh-icons-block": LocalJSX.SAbdullakhIconsBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhIconsBlockElement>;

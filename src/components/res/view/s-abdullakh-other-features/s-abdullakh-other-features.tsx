@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-other-features',
@@ -6,17 +6,25 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
   shadow: false,
 })
 export class SAbdullakhOtherFeatures implements ComponentInterface {
+  @Prop() otherFeatures: any;
+
   @Prop() featuresblock: any;
 
+  /**
+   * клик по в компоненте NewSinglePost
+   * */
+  @Event() clickOnOtherFeatures: EventEmitter;
+
   render() {
+    console.log(this.otherFeatures)
     return (
       <div class="container">
         <div class="other_features_title">
-          <h2>
-            {this.featuresblock.title}
+          <h2 onClick={() => this.clickOnOtherFeatures.emit(this.featuresblock.title)}>
+            {this.otherFeatures.title}
           </h2>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5" onClick={() => this.clickOnOtherFeatures.emit(this.featuresblock)}>
           <Blocks arr={this.featuresblock}/>
         </div>
       </div>

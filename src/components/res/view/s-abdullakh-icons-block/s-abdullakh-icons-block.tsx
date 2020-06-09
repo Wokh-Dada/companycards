@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-icons-block',
@@ -8,11 +8,16 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 export class SAbdullakhIconsBlock implements ComponentInterface {
   @Prop() previewBackground: any[];
 
+  /**
+   * клик по в компоненте NewSinglePost
+   * */
+  @Event() clickOnIconsBlock: EventEmitter;
+
   render() {
     return (
       <div class="container-fluid preview_block">
         <div class="container">
-          <div class="row">
+          <div class="row"  onClick={() => this.clickOnIconsBlock.emit(this.previewBackground)}>
             <IconBlocks arr={this.previewBackground}/>
           </div>
         </div>

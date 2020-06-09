@@ -1,5 +1,17 @@
 export let preHeader = false;
 
+export const headText = [
+  {
+    logo: '',
+    menuItemOne: 'PERSONAL',
+    menuItemTwo: 'BUSINESS',
+    menuOpen: '☰',
+    menuClose: 'X',
+    logIn: 'Log in',
+    btnText: 'Start for free'
+  }
+]
+
 export const headNav = [
   {nameLink: "Pricing", complited: false},
   {
@@ -8,58 +20,61 @@ export const headNav = [
     popup: [
       {
         popupTitle: "Features",
-        popupTitleComplited: true
+        popupTitleComplited: true,
+        popupLinks: [
+          {
+            popupItemName: "Product tour",
+            popupIcon: "public",
+            popupIconComplited: true,
+          },
+          {
+            popupItemName: "Account",
+            popupIcon: "account_balance_wallet",
+            popupIconComplited: true,
+          },
+          {
+            popupItemName: "Payments",
+            popupIcon: "swap_horiz",
+            popupIconComplited: true
+          },
+          {
+            popupItemName: "Company cards",
+            popupIcon: "credit_card",
+            popupIconComplited: true,
+          },
+          {
+            popupItemName: "Roles & Permissions",
+            popupIcon: "https",
+            popupIconComplited: true,
+          },
+          {
+            popupItemName: "Mobile app",
+            popupIcon: "stay_primary_portrait",
+            popupIconComplited: true,
+          },
+          {
+            popupItemName: "Security",
+            popupIcon: "security",
+            popupIconComplited: true,
+          },
+          {
+            popupItemName: "Perks",
+            popupIcon: "card_giftcard",
+            popupIconComplited: true,
+          },
+        ]
       },
       {
-        popupItemName: "Product tour",
-        popupIcon: "public",
-        popupIconComplited: true,
-      },
-      {
-        popupItemName: "Account",
-        popupIcon: "account_balance_wallet",
-        popupIconComplited: true,
-      },
-      {
-        popupItemName: "Payments",
-        popupIcon: "swap_horiz",
-        popupIconComplited: true,
-      },
-      {
-        popupItemName: "Company cards",
-        popupIcon: "credit_card",
-        popupIconComplited: true,
-      },
-      {
-        popupItemName: "Roles & Permissions",
-        popupIcon: "https",
-        popupIconComplited: true,
-      },
-      {
-        popupItemName: "Mobile app",
-        popupIcon: "stay_primary_portrait",
-        popupIconComplited: true,
-      },
-      {
-        popupItemName: "Security",
-        popupIcon: "security",
-        popupIconComplited: true,
-      },
-      {
-        popupItemName: "Perks",
-        popupIcon: "card_giftcard",
-        popupIconComplited: true,
-      },
-      {
-        popupTitle: "Features",
-        popupTitleComplited: true
-      },
-      {
-        popupItemName: "For accountants",
-        popupIcon: "event_note",
-        popupIconComplited: true,
+        popupTitle: "Solutions",
+        popupTitleComplited: true,
+        popupLinks: [
+          {
+            popupItemName: "For accountants",
+            popupIcon: "event_note",
+            popupIconComplited: true,
+          }
+        ]
       }
-
     ]
   },
   {
@@ -67,21 +82,32 @@ export const headNav = [
     complited: true,
     popup: [
       {
-        popupItemName: "Blog",
-        popupIconComplited: false,
-      },
-      {
-        popupItemName: "Community",
-        popupIconComplited: false,
-      },
-      {
-        popupItemName: "Help centre",
-        popupIconComplited: false,
-      },
-      {
-        popupItemName: "Webinar",
-        popupIconComplited: false,
+        popupTitle: "",
+        popupTitleComplited: false,
+        popupLinks: [
+          {
+            popupItemName: "Blog",
+            popupIcon: "",
+            popupIconComplited: false,
+          },
+          {
+            popupItemName: "Community",
+            popupIcon: "",
+            popupIconComplited: false,
+          },
+          {
+            popupItemName: "Help centre",
+            popupIcon: "",
+            popupIconComplited: false,
+          },
+          {
+            popupItemName: "Webinar",
+            popupIcon: "",
+            popupIconComplited: false,
+          }
+        ]
       }
+
     ]
   },
   {
@@ -89,20 +115,30 @@ export const headNav = [
     complited: true,
     popup: [
       {
-        popupItemName: "About",
-        popupIconComplited: false,
-      },
-      {
-        popupItemName: "Careers",
-        popupIconComplited: false,
-      },
-      {
-        popupItemName: "Affiates",
-        popupIconComplited: false,
-      },
-      {
-        popupItemName: "Contact cards",
-        popupIconComplited: false,
+        popupTitle: "",
+        popupTitleComplited: false,
+        popupLinks: [
+          {
+            popupItemName: "About",
+            popupIcon: "",
+            popupIconComplited: false,
+          },
+          {
+            popupItemName: "Careers",
+            popupIcon: "",
+            popupIconComplited: false,
+          },
+          {
+            popupItemName: "Affiates",
+            popupIcon: "",
+            popupIconComplited: false,
+          },
+          {
+            popupItemName: "Contact cards",
+            popupIcon: "",
+            popupIconComplited: false,
+          }
+        ]
       }
     ]
   }
@@ -148,7 +184,7 @@ export const expenseManagement = {
 }
 
 export const securityControl = {
-  securityControlImg: 'https://assets.revolut.com/media/business/corporate-cards/features/feature-cards.png',
+  securityControlImg: 'https://assets.revolut.com/media/business/corporate-cards/features/feature-security.svg',
   title: 'Control the security of your company cards',
   list: {
     text: [
@@ -160,7 +196,7 @@ export const securityControl = {
   }
 }
 
-export const cardDesign ={
+export const cardDesign = {
   cardDesignImgWhite: 'https://assets.revolut.com/media/business/businesscard_white.jpg',
   cardDesignImgBlack: 'https://assets.revolut.com/media/business/businesscard_black.jpg',
   title: 'Exclusive business card designs',

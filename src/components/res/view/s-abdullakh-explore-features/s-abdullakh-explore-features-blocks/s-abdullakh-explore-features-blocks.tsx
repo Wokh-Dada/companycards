@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-explore-features-blocks',
@@ -8,21 +8,26 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
 export class SAbdullakhExploreFeaturesBlocks implements ComponentInterface {
   @Prop() arr: any;
 
+  /**
+   * клик по в компоненте NewSinglePost
+   * */
+  @Event() clickOnExploreFeature: EventEmitter;
+
   render() {
     return (
       <div class="explore_features_position">
         <div class="explore_features_block">
           <div class={this.bckgrndClass(this.arr.class)}>
-            <span class="material-icons">
+            <span class="material-icons" onClick={() => this.clickOnExploreFeature.emit(this.arr.icon)}>
               {this.arr.icon}
             </span>
           </div>
           <div class="explore_features_block_title">
-            <h4>
+            <h4 onClick={() => this.clickOnExploreFeature.emit(this.arr.title)}>
               {this.arr.title}
             </h4>
           </div>
-          <div class="explore_features_block_content">
+          <div class="explore_features_block_content" onClick={() => this.clickOnExploreFeature.emit(this.arr.text)}>
             {this.arr.text}
           </div>
         </div>

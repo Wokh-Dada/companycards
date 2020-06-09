@@ -1,4 +1,4 @@
-import {Component, ComponentInterface, h, Prop} from '@stencil/core';
+import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 's-abdullakh-expense-management',
@@ -16,6 +16,8 @@ export class SAbdullakhExpenseManagement implements ComponentInterface {
    * */
   @Prop() expenseManagement: any;
 
+  @Event() clickOnExpenseManagement: EventEmitter;
+
   render() {
     return (
       <div class="container expense_management">
@@ -25,6 +27,7 @@ export class SAbdullakhExpenseManagement implements ComponentInterface {
               <div
                 class="expense_management_bckgrnd"
                 style={{backgroundImage: "url(" + this.expenseManagementImg + ")"}}
+                onClick={() => this.clickOnExpenseManagement.emit(this.expenseManagementImg)}
               >
               </div>
             </div>
@@ -34,17 +37,18 @@ export class SAbdullakhExpenseManagement implements ComponentInterface {
               <div
                 class="expense_management_bckgrnd"
                 style={{backgroundImage: "url(" + this.expenseManagementImg + ")"}}
+                onClick={() => this.clickOnExpenseManagement.emit(this.expenseManagementImg)}
               >
               </div>
             </div>
             <div class="expense_management_list_block">
               <div class="list_block">
-                <div class="list_block_title">
+                <div class="list_block_title" onClick={() => this.clickOnExpenseManagement.emit(this.expenseManagement.title)}>
                   <h3>
                     {this.expenseManagement.title}
                   </h3>
                 </div>
-                <ul class="list_block_info_blocks">
+                <ul class="list_block_info_blocks" onClick={() => this.clickOnExpenseManagement.emit(this.expenseManagement.list)}>
                   <ListBlock arr={this.expenseManagement.list} />
                 </ul>
               </div>
