@@ -14,8 +14,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  my-component --> footer-block
-  style footer-block fill:#f9f,stroke:#333,stroke-width:4px
+  my-component --> s-abdullakh-footer-block
+  style s-abdullakh-footer-block fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

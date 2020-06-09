@@ -5,6 +5,20 @@
 <!-- Auto Generated Below -->
 
 
+## Properties
+
+| Property     | Attribute     | Description | Type  | Default     |
+| ------------ | ------------- | ----------- | ----- | ----------- |
+| `cardDesign` | `card-design` |             | `any` | `undefined` |
+
+
+## Events
+
+| Event               | Description | Type               |
+| ------------------- | ----------- | ------------------ |
+| `clickOnCardDesign` |             | `CustomEvent<any>` |
+
+
 ## Dependencies
 
 ### Used by

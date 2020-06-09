@@ -1,4 +1,4 @@
-# clause-match
+# s-abdullakh-clause-match-content
 
 
 
@@ -23,18 +23,13 @@
 
 ### Used by
 
- - [my-component](../../../my-component)
-
-### Depends on
-
-- [s-abdullakh-clause-match-content](./res/view/s-abdullakh-clause-match-content)
+ - [s-abdullakh-clause-match](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
   s-abdullakh-clause-match --> s-abdullakh-clause-match-content
-  my-component --> s-abdullakh-clause-match
-  style s-abdullakh-clause-match fill:#f9f,stroke:#333,stroke-width:4px
+  style s-abdullakh-clause-match-content fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

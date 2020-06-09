@@ -21,8 +21,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  my-component --> pre-header
-  style pre-header fill:#f9f,stroke:#333,stroke-width:4px
+  my-component --> s-abdullakh-pre-header
+  style s-abdullakh-pre-header fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

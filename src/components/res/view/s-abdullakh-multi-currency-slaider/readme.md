@@ -5,6 +5,13 @@
 <!-- Auto Generated Below -->
 
 
+## Properties
+
+| Property               | Attribute                | Description | Type     | Default     |
+| ---------------------- | ------------------------ | ----------- | -------- | ----------- |
+| `multiCurrencySlaider` | `multi-currency-slaider` |             | `string` | `undefined` |
+
+
 ## Dependencies
 
 ### Used by
@@ -14,8 +21,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  my-component --> multi-currency-slaider
-  style multi-currency-slaider fill:#f9f,stroke:#333,stroke-width:4px
+  my-component --> s-abdullakh-multi-currency-slaider
+  style s-abdullakh-multi-currency-slaider fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

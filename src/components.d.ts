@@ -83,7 +83,10 @@ export namespace Components {
         "arr": any;
     }
     interface SAbdullakhIconsBlock {
-        "previewBackground": any[];
+        /**
+          * props принятия данных для компонента SAbdullakhIconsBlock
+         */
+        "previewBackground": any;
     }
     interface SAbdullakhLinkBlock {
         "linkBlock": any;
@@ -460,7 +463,10 @@ declare namespace LocalJSX {
           * клик по в компоненте NewSinglePost
          */
         "onClickOnIconsBlock"?: (event: CustomEvent<any>) => void;
-        "previewBackground"?: any[];
+        /**
+          * props принятия данных для компонента SAbdullakhIconsBlock
+         */
+        "previewBackground"?: any;
     }
     interface SAbdullakhLinkBlock {
         "linkBlock"?: any;

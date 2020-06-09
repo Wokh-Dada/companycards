@@ -7,27 +7,34 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type    | Default     |
-| -------- | --------- | ----------- | ------- | ----------- |
-| `text`   | --        |             | `any[]` | `undefined` |
-| `titl`   | --        |             | `any[]` | `undefined` |
+| Property | Attribute | Description      | Type  | Default     |
+| -------- | --------- | ---------------- | ----- | ----------- |
+| `arr`    | `arr`     | массив ListBlock | `any` | `undefined` |
+
+
+## Events
+
+| Event                      | Description | Type               |
+| -------------------------- | ----------- | ------------------ |
+| `clickOnExpenseManagement` |             | `CustomEvent<any>` |
+| `clickOnPersonalSecurity`  |             | `CustomEvent<any>` |
 
 
 ## Dependencies
 
 ### Used by
 
- - [expense-management](../res/view/s-abdullakh-expense-management)
- - [personal-security](../res/view/s-abdullakh-personal-security)
- - [security-control](../res/view/s-abdullakh-security-control)
+ - [s-abdullakh-expense-management](../res/view/s-abdullakh-expense-management)
+ - [s-abdullakh-personal-security](../res/view/s-abdullakh-personal-security)
+ - [s-abdullakh-security-control](../res/view/s-abdullakh-security-control)
 
 ### Graph
 ```mermaid
 graph TD;
-  expense-management --> list-block
-  personal-security --> list-block
-  security-control --> list-block
-  style list-block fill:#f9f,stroke:#333,stroke-width:4px
+  s-abdullakh-expense-management --> s-abdullakh-list-block
+  s-abdullakh-personal-security --> s-abdullakh-list-block
+  s-abdullakh-security-control --> s-abdullakh-list-block
+  style s-abdullakh-list-block fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

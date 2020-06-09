@@ -6,7 +6,10 @@ import {Component, ComponentInterface, Event, EventEmitter, h, Prop} from '@sten
   shadow: false,
 })
 export class SAbdullakhIconsBlock implements ComponentInterface {
-  @Prop() previewBackground: any[];
+  /**
+   * props принятия данных для компонента SAbdullakhIconsBlock
+   * */
+  @Prop() previewBackground: any;
 
   /**
    * клик по в компоненте NewSinglePost

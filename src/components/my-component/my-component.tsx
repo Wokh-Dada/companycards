@@ -17,21 +17,11 @@ import {
   shadow: false
 })
 export class MyComponent {
-  preHeader = true;
-
-  public close() {
-    this.preHeader = !true;
-  }
-
   render() {
     return (
       <div class="m-0 p-0">
         <div class="topThreeBlocks">
-          {this.preHeader ?
-            <s-abdullakh-pre-header onClose={() => this.close()}/>
-            :
-            ''
-          }
+          <s-abdullakh-pre-header />
           <s-abdullakh-header
             headText={headText}
             headNav={headNav}
@@ -42,8 +32,7 @@ export class MyComponent {
             onClickOnProductPresentation={(event) => this.clickOnProductPresentation(event)}
           />
         </div>
-        <s-abdullakh-multi-currency-slaider
-        />
+        <s-abdullakh-multi-currency-slaider/>
         <s-abdullakh-personal-security
           personalSecurityImg={personalSecurity.personalSecurityImg}
           personalSecurity={personalSecurity}

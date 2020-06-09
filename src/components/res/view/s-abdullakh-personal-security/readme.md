@@ -7,9 +7,17 @@
 
 ## Properties
 
-| Property           | Attribute | Description | Type    | Default     |
-| ------------------ | --------- | ----------- | ------- | ----------- |
-| `personalSecurity` | --        |             | `any[]` | `undefined` |
+| Property              | Attribute               | Description                 | Type     | Default     |
+| --------------------- | ----------------------- | --------------------------- | -------- | ----------- |
+| `personalSecurity`    | `personal-security`     | массив personalSecurity     | `any`    | `undefined` |
+| `personalSecurityImg` | `personal-security-img` | путь к img personalSecurity | `string` | `undefined` |
+
+
+## Events
+
+| Event                     | Description | Type               |
+| ------------------------- | ----------- | ------------------ |
+| `clickOnPersonalSecurity` |             | `CustomEvent<any>` |
 
 
 ## Dependencies
@@ -20,16 +28,14 @@
 
 ### Depends on
 
-- [list-block-bckgrnd](../../../s-abdullakh-list-block-bckgrnd)
-- [list-block](../../../s-abdullakh-list-block)
+- [s-abdullakh-list-block](../../../s-abdullakh-list-block)
 
 ### Graph
 ```mermaid
 graph TD;
-  personal-security --> list-block-bckgrnd
-  personal-security --> list-block
-  my-component --> personal-security
-  style personal-security fill:#f9f,stroke:#333,stroke-width:4px
+  s-abdullakh-personal-security --> s-abdullakh-list-block
+  my-component --> s-abdullakh-personal-security
+  style s-abdullakh-personal-security fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

@@ -1,4 +1,4 @@
-# explore-features
+# s-abdullakh-explore-features-blocks
 
 
 
@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property          | Attribute          | Description | Type  | Default     |
-| ----------------- | ------------------ | ----------- | ----- | ----------- |
-| `exploreFeatures` | `explore-features` |             | `any` | `undefined` |
+| Property | Attribute | Description | Type  | Default     |
+| -------- | --------- | ----------- | ----- | ----------- |
+| `arr`    | `arr`     |             | `any` | `undefined` |
 
 
 ## Events
@@ -23,18 +23,13 @@
 
 ### Used by
 
- - [my-component](../../../my-component)
-
-### Depends on
-
-- [s-abdullakh-explore-features-blocks](s-abdullakh-explore-features-blocks)
+ - [s-abdullakh-explore-features](..)
 
 ### Graph
 ```mermaid
 graph TD;
   s-abdullakh-explore-features --> s-abdullakh-explore-features-blocks
-  my-component --> s-abdullakh-explore-features
-  style s-abdullakh-explore-features fill:#f9f,stroke:#333,stroke-width:4px
+  style s-abdullakh-explore-features-blocks fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
