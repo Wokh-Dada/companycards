@@ -23,7 +23,7 @@
 
 ### Used by
 
- - [s-abdullakh-head-menu](../s-abdullakh-head-menu)
+ - [s-abdullakh-head-menu](../../..)
 
 ### Graph
 ```mermaid

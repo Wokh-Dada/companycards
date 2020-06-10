@@ -16,6 +16,9 @@ export class SAbdullakhPersonalSecurity implements ComponentInterface {
    * */
   @Prop() personalSecurity: any;
 
+  /**
+   * клик по элементам personalSecurity
+   * */
   @Event() clickOnPersonalSecurity: EventEmitter;
 
   render() {
@@ -23,20 +26,20 @@ export class SAbdullakhPersonalSecurity implements ComponentInterface {
       <div class="container persional_security">
         <div class="row persional_security_block">
           <div class="col-lg-5 mt-5">
-            <div
-              class="persional_security_right d-lg-none d-block"
-              style={{backgroundImage: "url(" + this.personalSecurityImg + ")"}}
-              onClick={() => this.clickOnPersonalSecurity.emit(this.personalSecurityImg)}
-            >
+            <div class="persional_security_right d-lg-none d-block"
+                 style={{backgroundImage: "url(" + this.personalSecurityImg + ")"}}
+                 onClick={() => this.clickOnPersonalSecurity.emit(this.personalSecurityImg)}>
             </div>
             <div class="persional_security_list_block">
               <div class="list_block">
-                <div class="list_block_title" onClick={() => this.clickOnPersonalSecurity.emit(this.personalSecurity.title)}>
+                <div class="list_block_title"
+                     onClick={() => this.clickOnPersonalSecurity.emit(this.personalSecurity.title)}>
                   <h3>
                     {this.personalSecurity.title}
                   </h3>
                 </div>
-                <ul class="list_block_info_blocks" onClick={() => this.clickOnPersonalSecurity.emit(this.personalSecurity.list)}>
+                <ul class="list_block_info_blocks"
+                    onClick={() => this.clickOnPersonalSecurity.emit(this.personalSecurity.list)}>
                   <ListBlock arr={this.personalSecurity.list}/>
                 </ul>
               </div>
@@ -44,7 +47,7 @@ export class SAbdullakhPersonalSecurity implements ComponentInterface {
           </div>
           <div class="col-lg-7 d-none d-lg-block">
             <div class="persional_security_right">
-              <div style={{backgroundImage: "url(" + this.personalSecurityImg + ")"}} >
+              <div style={{backgroundImage: "url(" + this.personalSecurityImg + ")"}}>
               </div>
             </div>
           </div>

@@ -22,7 +22,7 @@
 - [s-abdullakh-explore-features](../res/view/s-abdullakh-explore-features)
 - [s-abdullakh-link-block](../res/view/s-abdullakh-link-block)
 - [s-abdullakh-icons-block](../res/view/s-abdullakh-icons-block)
-- [s-abdullakh-footer-block](../res/view/s-abdullakh-footer-block)
+- [s-abdullakh-footer-block](../res/view/s-abdullakh-footer)
 
 ### Graph
 ```mermaid

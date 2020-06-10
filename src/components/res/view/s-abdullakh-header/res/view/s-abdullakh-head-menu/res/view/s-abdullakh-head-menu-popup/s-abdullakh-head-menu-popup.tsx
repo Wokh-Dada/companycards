@@ -17,7 +17,6 @@ export class SAbdullakhHeadMenuPopup implements ComponentInterface {
   @Event() clickOnHeader: EventEmitter;
 
   render() {
-    console.log(this.arr.popupTitle)
     return (
       <Popup arr={this.arr}/>
     );

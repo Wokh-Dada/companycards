@@ -27,7 +27,7 @@
 
 ### Depends on
 
-- [s-abdullakh-explore-features-blocks](s-abdullakh-explore-features-blocks)
+- [s-abdullakh-explore-features-blocks](res/view/s-abdullakh-explore-features-blocks)
 
 ### Graph
 ```mermaid

@@ -16,7 +16,6 @@ export class SAbdullakhOtherFeatures implements ComponentInterface {
   @Event() clickOnOtherFeatures: EventEmitter;
 
   render() {
-    console.log(this.otherFeatures)
     return (
       <div class="container">
         <div class="other_features_title">

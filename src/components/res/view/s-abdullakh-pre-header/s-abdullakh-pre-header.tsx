@@ -10,7 +10,6 @@ export class SAbdullakhPreHeader implements ComponentInterface {
   @Event() close: EventEmitter;
 
   render() {
-    console.log(this.close)
     return (
       <div class="container-fluid cookes_main_block_bckrnd">
         <div class="container">

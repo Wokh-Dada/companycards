@@ -272,17 +272,96 @@ export const previewBackground = {
   previewBackgroundBlock: [
     {
       class: 'one',
+      img: 'https://assets.revolut.com/media/business/awards/investor-allstars.png'
     },
     {
       class: 'two',
+      img: 'https://assets.revolut.com/media/business/awards/uxuk.png'
     },
     {
       class: 'three',
+      img: 'https://assets.revolut.com/media/business/awards/award-ukTechAwards.svg'
     },
     {
       class: 'four',
+      img: 'https://assets.revolut.com/media/business/awards/award-businessAwards.svg'
     }
   ]
 }
+
+export const footer = [
+  [
+    {
+      menuTitle: 'PERSONAL',
+      menuTitleActive:'BUSINESS'
+    }
+  ],
+  [
+    {
+      title: 'PRODUCT',
+      id: 'PRODUCT',
+      items: [
+        {id: 'Product tour', linkName: 'Product tour'},
+        {id: 'For accountants', linkName: 'For accountants'},
+        {id: 'Pricing', linkName: 'Pricing'}
+      ]
+    },
+  ],
+  [
+    {
+      title: 'FEATURES',
+      id: 'FEATURES',
+      items: [
+        {id: 'Accounts', linkName: 'Accounts'},
+        {id: 'Payments', linkName: 'Payments'},
+      ]
+    },
+    {
+      title: 'Company cards',
+      id: 'Company cards',
+      items: [
+        {id: 'Roles & Permissions', linkName: 'Roles & Permissions'},
+        {id: 'API & Integrations', linkName: 'API & Integrations'},
+        {id: 'Mobile app', linkName: 'Mobile app'},
+        {id: 'Security', linkName: 'Security'},
+        {id: 'Perks', linkName: 'Perks'},
+      ]
+    },
+  ],
+  [
+    {
+      title: 'Resources',
+      id: 'Resources',
+      items: [
+        {id: 'Blog', linkName: 'Blog'},
+        {id: 'Community', linkName: 'Community'},
+        {id: 'Help centre', linkName: 'Help centre'},
+        {id: 'Webinar', linkName: 'Webinar'}
+      ]
+    },
+  ],
+  [
+    {
+      title: 'Company',
+      items: [
+        {id: 'About', linkName: 'About'},
+        {id: 'Contact', linkName: 'Contact'},
+        {id: 'Careers', linkName: 'Careers'}
+      ]
+    }
+  ],
+  [
+    {
+      title: 'FOLLOW',
+      items: [
+        {id: 'Facebook', linkName: 'Facebook'},
+        {id: 'Instagram', linkName: 'Instagram'},
+        {id: 'Twitter', linkName: 'Twitter'},
+        {id: 'LinkedIn', linkName: 'LinkedIn'},
+        {id: 'Dribbble', linkName: 'Dribbble'}
+      ]
+    }
+  ]
+]
 
 

@@ -5,7 +5,7 @@ import {Component, ComponentInterface, h, Prop} from '@stencil/core';
   styleUrl: 's-abdullakh-icons.css',
   shadow: false,
 })
-export class SAbdullakhIconsBlock implements ComponentInterface {
+export class SAbdullakhIcons implements ComponentInterface {
   @Prop() arr: any;
 
   render() {
@@ -32,5 +32,7 @@ export class SAbdullakhIconsBlock implements ComponentInterface {
         return 'preview_img_four';
     }
   }
+
+  // style={{backgroundImage: "url(" + this.arr.img + ")"}}
 
 }

@@ -52,10 +52,7 @@ export class SAbdullakhHeader implements ComponentInterface {
         <div class="container">
           <div class="row main__menu px-0 mx-0">
             <div class="col-auto pr-0 mr-0">
-              <div
-                class="logo"
-                onClick={() => this.clickOnHeader.emit(event)}
-              >
+              <div class="logo" onClick={() => this.clickOnHeader.emit(event)}>
                 <a class="navbar-brand">
                   <svg
                     width="121"
@@ -81,10 +78,7 @@ export class SAbdullakhHeader implements ComponentInterface {
                 </a>
               </div>
             </div>
-            <div
-              class="col mr-0 pr-0"
-              onClick={() => this.clickOnHeader.emit(event)}
-            >
+            <div class="col mr-0 pr-0" onClick={() => this.clickOnHeader.emit(event)}>
               <s-abdullakh-head-menu headNav={this.headNav} headText={this.headText}/>
             </div>
           </div>

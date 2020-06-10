@@ -33,7 +33,17 @@ export namespace Components {
     interface SAbdullakhExploreFeaturesBlocks {
         "arr": any;
     }
-    interface SAbdullakhFooterBlock {
+    interface SAbdullakhFooter {
+        "footer": any[];
+    }
+    interface SAbdullakhFooterLogoBlocks {
+        "arr": any;
+    }
+    interface SAbdullakhFooterMenuBlocks {
+        "arr": any;
+    }
+    interface SAbdullakhFooterMenuLinks {
+        "arr": any;
     }
     interface SAbdullakhHeadMenu {
         /**
@@ -195,11 +205,29 @@ declare global {
         prototype: HTMLSAbdullakhExploreFeaturesBlocksElement;
         new (): HTMLSAbdullakhExploreFeaturesBlocksElement;
     };
-    interface HTMLSAbdullakhFooterBlockElement extends Components.SAbdullakhFooterBlock, HTMLStencilElement {
+    interface HTMLSAbdullakhFooterElement extends Components.SAbdullakhFooter, HTMLStencilElement {
     }
-    var HTMLSAbdullakhFooterBlockElement: {
-        prototype: HTMLSAbdullakhFooterBlockElement;
-        new (): HTMLSAbdullakhFooterBlockElement;
+    var HTMLSAbdullakhFooterElement: {
+        prototype: HTMLSAbdullakhFooterElement;
+        new (): HTMLSAbdullakhFooterElement;
+    };
+    interface HTMLSAbdullakhFooterLogoBlocksElement extends Components.SAbdullakhFooterLogoBlocks, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhFooterLogoBlocksElement: {
+        prototype: HTMLSAbdullakhFooterLogoBlocksElement;
+        new (): HTMLSAbdullakhFooterLogoBlocksElement;
+    };
+    interface HTMLSAbdullakhFooterMenuBlocksElement extends Components.SAbdullakhFooterMenuBlocks, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhFooterMenuBlocksElement: {
+        prototype: HTMLSAbdullakhFooterMenuBlocksElement;
+        new (): HTMLSAbdullakhFooterMenuBlocksElement;
+    };
+    interface HTMLSAbdullakhFooterMenuLinksElement extends Components.SAbdullakhFooterMenuLinks, HTMLStencilElement {
+    }
+    var HTMLSAbdullakhFooterMenuLinksElement: {
+        prototype: HTMLSAbdullakhFooterMenuLinksElement;
+        new (): HTMLSAbdullakhFooterMenuLinksElement;
     };
     interface HTMLSAbdullakhHeadMenuElement extends Components.SAbdullakhHeadMenu, HTMLStencilElement {
     }
@@ -323,7 +351,10 @@ declare global {
         "s-abdullakh-expense-management": HTMLSAbdullakhExpenseManagementElement;
         "s-abdullakh-explore-features": HTMLSAbdullakhExploreFeaturesElement;
         "s-abdullakh-explore-features-blocks": HTMLSAbdullakhExploreFeaturesBlocksElement;
-        "s-abdullakh-footer-block": HTMLSAbdullakhFooterBlockElement;
+        "s-abdullakh-footer": HTMLSAbdullakhFooterElement;
+        "s-abdullakh-footer-logo-blocks": HTMLSAbdullakhFooterLogoBlocksElement;
+        "s-abdullakh-footer-menu-blocks": HTMLSAbdullakhFooterMenuBlocksElement;
+        "s-abdullakh-footer-menu-links": HTMLSAbdullakhFooterMenuLinksElement;
         "s-abdullakh-head-menu": HTMLSAbdullakhHeadMenuElement;
         "s-abdullakh-head-menu-in-popup": HTMLSAbdullakhHeadMenuInPopupElement;
         "s-abdullakh-head-menu-popup": HTMLSAbdullakhHeadMenuPopupElement;
@@ -385,7 +416,17 @@ declare namespace LocalJSX {
          */
         "onClickOnExploreFeature"?: (event: CustomEvent<any>) => void;
     }
-    interface SAbdullakhFooterBlock {
+    interface SAbdullakhFooter {
+        "footer"?: any[];
+    }
+    interface SAbdullakhFooterLogoBlocks {
+        "arr"?: any;
+    }
+    interface SAbdullakhFooterMenuBlocks {
+        "arr"?: any;
+    }
+    interface SAbdullakhFooterMenuLinks {
+        "arr"?: any;
     }
     interface SAbdullakhHeadMenu {
         /**
@@ -502,6 +543,9 @@ declare namespace LocalJSX {
         "onClickOnOtherFeatures"?: (event: CustomEvent<any>) => void;
     }
     interface SAbdullakhPersonalSecurity {
+        /**
+          * клик по элементам personalSecurity
+         */
         "onClickOnPersonalSecurity"?: (event: CustomEvent<any>) => void;
         /**
           * массив personalSecurity
@@ -568,7 +612,10 @@ declare namespace LocalJSX {
         "s-abdullakh-expense-management": SAbdullakhExpenseManagement;
         "s-abdullakh-explore-features": SAbdullakhExploreFeatures;
         "s-abdullakh-explore-features-blocks": SAbdullakhExploreFeaturesBlocks;
-        "s-abdullakh-footer-block": SAbdullakhFooterBlock;
+        "s-abdullakh-footer": SAbdullakhFooter;
+        "s-abdullakh-footer-logo-blocks": SAbdullakhFooterLogoBlocks;
+        "s-abdullakh-footer-menu-blocks": SAbdullakhFooterMenuBlocks;
+        "s-abdullakh-footer-menu-links": SAbdullakhFooterMenuLinks;
         "s-abdullakh-head-menu": SAbdullakhHeadMenu;
         "s-abdullakh-head-menu-in-popup": SAbdullakhHeadMenuInPopup;
         "s-abdullakh-head-menu-popup": SAbdullakhHeadMenuPopup;
@@ -601,7 +648,10 @@ declare module "@stencil/core" {
             "s-abdullakh-expense-management": LocalJSX.SAbdullakhExpenseManagement & JSXBase.HTMLAttributes<HTMLSAbdullakhExpenseManagementElement>;
             "s-abdullakh-explore-features": LocalJSX.SAbdullakhExploreFeatures & JSXBase.HTMLAttributes<HTMLSAbdullakhExploreFeaturesElement>;
             "s-abdullakh-explore-features-blocks": LocalJSX.SAbdullakhExploreFeaturesBlocks & JSXBase.HTMLAttributes<HTMLSAbdullakhExploreFeaturesBlocksElement>;
-            "s-abdullakh-footer-block": LocalJSX.SAbdullakhFooterBlock & JSXBase.HTMLAttributes<HTMLSAbdullakhFooterBlockElement>;
+            "s-abdullakh-footer": LocalJSX.SAbdullakhFooter & JSXBase.HTMLAttributes<HTMLSAbdullakhFooterElement>;
+            "s-abdullakh-footer-logo-blocks": LocalJSX.SAbdullakhFooterLogoBlocks & JSXBase.HTMLAttributes<HTMLSAbdullakhFooterLogoBlocksElement>;
+            "s-abdullakh-footer-menu-blocks": LocalJSX.SAbdullakhFooterMenuBlocks & JSXBase.HTMLAttributes<HTMLSAbdullakhFooterMenuBlocksElement>;
+            "s-abdullakh-footer-menu-links": LocalJSX.SAbdullakhFooterMenuLinks & JSXBase.HTMLAttributes<HTMLSAbdullakhFooterMenuLinksElement>;
             "s-abdullakh-head-menu": LocalJSX.SAbdullakhHeadMenu & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuElement>;
             "s-abdullakh-head-menu-in-popup": LocalJSX.SAbdullakhHeadMenuInPopup & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuInPopupElement>;
             "s-abdullakh-head-menu-popup": LocalJSX.SAbdullakhHeadMenuPopup & JSXBase.HTMLAttributes<HTMLSAbdullakhHeadMenuPopupElement>;

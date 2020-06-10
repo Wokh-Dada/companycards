@@ -3,7 +3,7 @@ import {
   cardDesign,
   clauseMatch,
   expenseManagement,
-  exploreFeatures,
+  exploreFeatures, footer,
   headNav, headText, linkBlock,
   otherFeatures, personalSecurity,
   previewBackground,
@@ -21,7 +21,7 @@ export class MyComponent {
     return (
       <div class="m-0 p-0">
         <div class="topThreeBlocks">
-          <s-abdullakh-pre-header />
+          <s-abdullakh-pre-header/>
           <s-abdullakh-header
             headText={headText}
             headNav={headNav}
@@ -73,7 +73,9 @@ export class MyComponent {
           previewBackground={previewBackground.previewBackgroundBlock}
           onClickOnIconsBlock={(event) => this.clickOnIconsBlock(event)}
         />
-        <s-abdullakh-footer-block/>
+        <s-abdullakh-footer
+          footer={footer}
+        />
       </div>
     );
   }
@@ -96,63 +98,63 @@ export class MyComponent {
    * клик по элементам personalSecurity
    */
   public clickOnPersonalSecurity({detail}) {
-    return console.log('personalSecurity:',  detail)
+    return console.log('personalSecurity:', detail)
   }
 
   /**
    * клик по элементам ExpenseManagement
    */
   public clickOnExpenseManagement({detail}) {
-    return console.log('ExpenseManagement:',  detail)
+    return console.log('ExpenseManagement:', detail)
   }
 
   /**
    * клик по элементам ClauseMatch
    */
   public clickOnClauseMatch({detail}) {
-    return console.log('ClauseMatch:',  detail)
+    return console.log('ClauseMatch:', detail)
   }
 
   /**
    * клик по элементам SecurityControl
    */
   public clickOnSecurityControl({detail}) {
-    return console.log('SecurityControl:',  detail)
+    return console.log('SecurityControl:', detail)
   }
 
   /**
    * клик по элементам CardDesign
    */
   public clickOnCardDesign({detail}) {
-    return console.log('CardDesign:',  detail)
+    return console.log('CardDesign:', detail)
   }
 
   /**
    * клик по элементам OtherFeatures
    */
   public clickOnOtherFeatures({detail}) {
-    return console.log('OtherFeatures:',  detail)
+    return console.log('OtherFeatures:', detail)
   }
 
   /**
    * клик по элементам ExploreFeature
    */
   public clickOnExploreFeature({detail}) {
-    return console.log('ExploreFeature:',  detail)
+    return console.log('ExploreFeature:', detail)
   }
 
   /**
    * клик по элементам LinkBlock
    */
   public clickOnLinkBlock({detail}) {
-    return console.log('LinkBlock:',  detail)
+    return console.log('LinkBlock:', detail)
   }
 
   /**
    * клик по элементам clickOnIconsBlock
    */
   public clickOnIconsBlock({detail}) {
-    return console.log('clickOnIconsBlock:',  detail)
+    return console.log('clickOnIconsBlock:', detail)
   }
 }
 
