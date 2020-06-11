@@ -46,9 +46,7 @@ export class SAbdullakhPersonalSecurity implements ComponentInterface {
             </div>
           </div>
           <div class="col-lg-7 d-none d-lg-block">
-            <div class="persional_security_right">
-              <div style={{backgroundImage: "url(" + this.personalSecurityImg + ")"}}>
-              </div>
+            <div class="persional_security_right" style={{backgroundImage: "url(" + this.personalSecurityImg + ")"}}>
             </div>
           </div>
         </div>

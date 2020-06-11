@@ -15,9 +15,9 @@
 
 ## Events
 
-| Event                     | Description | Type               |
-| ------------------------- | ----------- | ------------------ |
-| `clickOnPersonalSecurity` |             | `CustomEvent<any>` |
+| Event                     | Description                        | Type               |
+| ------------------------- | ---------------------------------- | ------------------ |
+| `clickOnPersonalSecurity` | клик по элементам personalSecurity | `CustomEvent<any>` |
 
 
 ## Dependencies

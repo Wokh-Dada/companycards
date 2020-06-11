@@ -28,8 +28,8 @@
 
 ### Depends on
 
-- [s-abdullakh-head-nav-start](res/view/s-abdullakh-head-nav-strat)
-- [s-abdullakh-head-nav-end](res/view/s-abdullakh-head-nav-end)
+- [s-abdullakh-head-nav-start](./res/view/s-abdullakh-head-nav-strat)
+- [s-abdullakh-head-nav-end](./res/view/s-abdullakh-head-nav-end)
 - [s-abdullakh-head-menu-popup](./res/view/s-abdullakh-head-menu-popup)
 
 ### Graph

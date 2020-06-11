@@ -17,10 +17,7 @@ export class SAbdullakhListBlock implements ComponentInterface {
 
   render() {
     return (
-      <li
-        class="list_block_info_block"
-        onClick={() => this.clickOnPersonalSecurity.emit(this.arr.text)}
-      >
+      <li class="list_block_info_block" onClick={() => this.clickOnPersonalSecurity.emit(this.arr.text)}>
         <div>
           {this.arr.text}
         </div>

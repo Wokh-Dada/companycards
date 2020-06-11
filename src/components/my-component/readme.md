@@ -22,7 +22,7 @@
 - [s-abdullakh-explore-features](../res/view/s-abdullakh-explore-features)
 - [s-abdullakh-link-block](../res/view/s-abdullakh-link-block)
 - [s-abdullakh-icons-block](../res/view/s-abdullakh-icons-block)
-- [s-abdullakh-footer-block](../res/view/s-abdullakh-footer)
+- [s-abdullakh-footer](../res/view/s-abdullakh-footer)
 
 ### Graph
 ```mermaid
@@ -40,7 +40,7 @@ graph TD;
   my-component --> s-abdullakh-explore-features
   my-component --> s-abdullakh-link-block
   my-component --> s-abdullakh-icons-block
-  my-component --> s-abdullakh-footer-block
+  my-component --> s-abdullakh-footer
   s-abdullakh-header --> s-abdullakh-head-menu
   s-abdullakh-head-menu --> s-abdullakh-head-nav-start
   s-abdullakh-head-menu --> s-abdullakh-head-nav-end
@@ -55,6 +55,9 @@ graph TD;
   s-abdullakh-other-features --> s-abdullakh-other-features-blocks
   s-abdullakh-explore-features --> s-abdullakh-explore-features-blocks
   s-abdullakh-icons-block --> s-abdullakh-icons
+  s-abdullakh-footer --> s-abdullakh-footer-logo-blocks
+  s-abdullakh-footer --> s-abdullakh-footer-menu-blocks
+  s-abdullakh-footer-menu-blocks --> s-abdullakh-footer-menu-links
   style my-component fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

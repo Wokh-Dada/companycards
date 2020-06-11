@@ -9,7 +9,6 @@ export class SAbdullakhFooterLogoBlocks implements ComponentInterface {
   @Prop() arr: any;
 
   render() {
-    console.log(this.arr)
     return (
       <div class="footer_logo_block">
         <a href="#" class="footer_logo">

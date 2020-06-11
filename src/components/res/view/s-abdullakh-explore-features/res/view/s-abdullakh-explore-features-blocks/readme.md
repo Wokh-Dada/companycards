@@ -23,7 +23,7 @@
 
 ### Used by
 
- - [s-abdullakh-explore-features](../../../../../../../../..)
+ - [s-abdullakh-explore-features](../../..)
 
 ### Graph
 ```mermaid
