@@ -10,34 +10,6 @@ export class SAbdullakhMultiCurrencySlaider implements ComponentInterface {
   @Prop() multiCurrencySlaider: string
 
   render() {
-    // autoSlider();
-    // let left = 0;
-    // var tim;
-    // var tim2;
-    //
-    //
-    // function autoSlider() {
-    //   tim = setTimeout(() =>{
-    //     let polosa = document.getElementById("multi_currency_carusel_one_position");
-    //     left = left - 10;
-    //     if (left < -1000) {
-    //       left = 0
-    //     }
-    //     polosa.style.left = left +'px';
-    //     autoSlider();
-    //   }, 300)
-    //
-    //   tim2 = setTimeout(() =>{
-    //     let polosaTwo = document.getElementById("multi_currency_carusel_two_position");
-    //     // left = left - 10;
-    //     // if (left < -1000) {
-    //     //   left = 0
-    //     // }
-    //     polosaTwo.style.right = left +'px';
-    //     autoSlider();
-    //   }, 300)
-    // }
-
     return (
       <div class="container">
         <div class="multy_currency_title_block">

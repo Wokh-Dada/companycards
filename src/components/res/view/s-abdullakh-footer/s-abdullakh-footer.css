@@ -74,6 +74,10 @@ footer{
   transition: color 0.2s ease 0s;
 }
 
+.footer_link:hover{
+  text-decoration: none;
+}
+
 .copyright_block{
   display: flex;
   margin-top: 100px;

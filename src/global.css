@@ -10,12 +10,31 @@
 a{
   text-decoration: inherit;
   color: inherit;
+  cursor: pointer;
+}
+
+a:not([href]) {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 
 button{
+  cursor: pointer;
   text-decoration: inherit;
   color: inherit;
   outline: inherit;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+  text-decoration: inherit;
+  color: inherit;
+  outline: inherit;
+}
+
+input{
+  outline: transparent;
 }
 
 /*button*/
@@ -51,7 +70,7 @@ button{
 .header_btn, .presentation_btn{
   background-color: #0056fb;
   border-radius: 9px;
-  color: white;
+  color: white!important;
   margin-left: -20px;
   border: 2px solid #0056fb;
   padding: 12px;

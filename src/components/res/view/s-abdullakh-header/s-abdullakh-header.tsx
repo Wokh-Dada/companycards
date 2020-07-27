@@ -21,47 +21,27 @@ export class SAbdullakhHeader implements ComponentInterface {
    * */
   @Event() clickOnHeader: EventEmitter;
 
-  render() {
-    // window.addEventListener('scroll', function() {
-    //   let scrollTop = document.body.scrollTop;
-    //
-    //   if(scrollTop > 150) {
-    //     document.getElementById('showScroll').className = 'menu_scroll';
-    //   } else {
-    //     document.getElementById('showScroll').className = 'menu_sticky';
-    //   }
-    //
-    // });
+  /**
+   * ref для подключения k блоку
+   * */
+  headerFix: HTMLElement;
 
-    // let el = document.querySelector('.showScroll');
-    //
-    // window.addEventListener('scroll', toggleClassOnScroll.bind(el, 150));
-    //
-    // function toggleClassOnScroll(pxAmount) {
-    //   let scrollTop = document.body.scrollTop;
-    //
-    //   if(scrollTop > pxAmount) {
-    //     this.classList.add('menu_scroll');
-    //   } else {
-    //     this.classList.remove('menu_scroll');
-    //   }
-    // }
+  render() {
 
     return (
-      <header class="container-fluid menu_sticky" id="showScroll">
+      <header class="container-fluid" ref={(el) => this.headerFix = el}>
         <div class="container">
           <div class="row main__menu px-0 mx-0">
             <div class="col-auto pr-0 mr-0">
               <div class="logo" onClick={() => this.clickOnHeader.emit(event)}>
                 <a class="navbar-brand">
-                  <svg
-                    width="121"
-                    height="53"
-                    viewBox="0 0 687.78668 302.62668"
-                    preserveAspectRatio="xMidYMid meet"
-                    xmlns="http://www.w3.org/2000/svg"
-                    data-testid="logo-svg"
-                    class="styles__StyledSvg-a7znz5-1 ccHFrG">
+                  <svg width="121"
+                       height="53"
+                       viewBox="0 0 687.78668 302.62668"
+                       preserveAspectRatio="xMidYMid meet"
+                       xmlns="http://www.w3.org/2000/svg"
+                       data-testid="logo-svg"
+                       class="styles__StyledSvg-a7znz5-1 ccHFrG">
                     <g transform="matrix(1.3333333,0,0,-1.3333333,0,302.62667)" id="g10">
                       <g transform="scale(0.1)" id="g12">
                         <path id="path14"
@@ -86,6 +66,23 @@ export class SAbdullakhHeader implements ComponentInterface {
       </header>
     );
   }
+
+  componentWillLoad() {
+    // window.addEventListener('scroll', this.toggleClassOnScroll)
+    console.log(window.scrollY)
+  }
+  //
+  // public toggleClassOnScroll() {
+  //   let scrollTop = document.body.scrollTop;
+  //
+  //   if (scrollTop > 150) {
+  //     // this.headerFix.id = 'menu_scroll';
+  //     return 'menu_scroll'
+  //   } else {
+  //     // this.headerFix.id = '';
+  //     return 'menu_scroll'
+  //   }
+  // }
 }
 
 

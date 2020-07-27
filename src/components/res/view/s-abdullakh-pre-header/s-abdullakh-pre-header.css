@@ -37,5 +37,5 @@
   height: 40px;
   padding: 0 30px;
   border-radius: 15px;
-  color: rgb(6, 102, 235);
+  color: rgb(6, 102, 235) !important;
 }

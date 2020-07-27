@@ -30,11 +30,10 @@ export class SAbdullakhHeadMenu implements ComponentInterface {
   render() {
     return (
       <div>
-        <a
-          id="menu"
-          class="menu_icon"
-          ref={(el) => this.navOpenTag = el}
-          onClick={() => this.toggleMobileMenu()}
+        <a id="menu"
+           class="menu_icon"
+           ref={(el) => this.navOpenTag = el}
+           onClick={() => this.toggleMobileMenu()}
         >
           &#9776;
         </a>
@@ -43,7 +42,7 @@ export class SAbdullakhHeadMenu implements ComponentInterface {
             X
           </a>
           <div class="navbar_left_block">
-            <s-abdullakh-head-nav-start headText={this.headText} />
+            <s-abdullakh-head-nav-start headText={this.headText}/>
           </div>
           <div class="navbar_right_block">
             <nav>
@@ -51,7 +50,7 @@ export class SAbdullakhHeadMenu implements ComponentInterface {
                 <MenuItem
                   arr={this.headNav}
                 />
-                <s-abdullakh-head-nav-end headText={this.headText} />
+                <s-abdullakh-head-nav-end headText={this.headText}/>
               </div>
             </nav>
           </div>

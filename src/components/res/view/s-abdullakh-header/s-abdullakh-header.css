@@ -6,13 +6,14 @@
   right: 0;
 }
 
-.menu_scroll {
+#menu_scroll {
   z-index: 11;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
   box-shadow: rgba(25, 28, 31, 0.04) 0px 8px 16px, rgba(25, 28, 31, 0.04) 0px -1px 0px;
+  padding: 1.25rem 0px;
   background: rgb(255, 255, 255);
 }
 

@@ -1,4 +1,4 @@
-import {Component, h} from '@stencil/core';
+import {Component, h, State} from '@stencil/core';
 import {
   cardDesign,
   clauseMatch,
@@ -17,11 +17,25 @@ import {
   shadow: false
 })
 export class MyComponent {
+  /**
+   * boolean значение для вывода компонента form-communication
+   */
+  @State() popupComplited: boolean;
+
+  componentWillLoad() {
+    this.popupComplited = true;
+  }
+
   render() {
     return (
       <div class="m-0 p-0">
         <div class="topThreeBlocks">
-          <s-abdullakh-pre-header/>
+          {this.popupComplited ? (
+            <s-abdullakh-pre-header onClose={() => this.close()}/>
+          ) : (
+            ""
+          )}
+
           <s-abdullakh-header
             headText={headText}
             headNav={headNav}
@@ -78,6 +92,13 @@ export class MyComponent {
         />
       </div>
     );
+  }
+
+  /**
+   * Закрытие модального окна формы
+   */
+  public close() {
+    this.popupComplited = false;
   }
 
   /**

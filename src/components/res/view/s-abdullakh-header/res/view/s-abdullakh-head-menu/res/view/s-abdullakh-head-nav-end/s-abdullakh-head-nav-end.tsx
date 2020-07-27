@@ -18,7 +18,7 @@ export class SAbdullakhHeadMenu implements ComponentInterface {
 
   render() {
     return (
-      <MenuEnd arr={this.headText} />
+      <MenuEnd arr={this.headText}/>
     );
   }
 }
@@ -30,18 +30,16 @@ const MenuEnd = (props) => {
   return props.arr.map((item) => {
     return (
       <div class="mobile_btn_block">
-        <a
-          class="logIn"
-          onClick={() => this.clickOnHeader.emit(event)}
+        <a class="logIn"
+           onClick={() => this.clickOnHeader.emit(event)}
         >
           {item.logIn}
         </a>
         <span>
           <div class="header_btn_block">
             <div class="input-group-append">
-              <button
-                class="header_btn"
-                onClick={() => this.clickOnHeader.emit(event)}
+              <button class="header_btn"
+                      onClick={() => this.clickOnHeader.emit(event)}
               >
                 {item.btnText}
               </button>
