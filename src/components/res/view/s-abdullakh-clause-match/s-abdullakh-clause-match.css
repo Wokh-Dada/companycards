@@ -70,10 +70,6 @@
   .clause_match_left_block_author {
     font-size: 17px;
   }
-
-  .block_name {
-    font-size: 27px;
-  }
 }
 
 @media (max-width: 995px) {
@@ -104,5 +100,11 @@
 @media (max-width: 1200px) {
   .persional_security_list_block {
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .clause_match_right_block{
+    height: 280px;
   }
 }

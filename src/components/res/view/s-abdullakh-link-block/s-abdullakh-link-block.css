@@ -42,12 +42,13 @@
 }
 
 
-
+@media (max-width: 995px) {
+  .link_block_title h2 {
+    font-size: 2.5rem;
+  }
+}
 
 @media (max-width: 768px) {
-  .link_block_title h2 {
-    font-size: 3.5rem;
-  }
 }
 
 @media (max-width: 576px) {

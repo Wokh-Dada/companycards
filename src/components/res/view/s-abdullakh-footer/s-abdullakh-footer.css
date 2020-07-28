@@ -11,7 +11,6 @@ footer{
 
 .footer_block{
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -146,4 +145,11 @@ footer{
   display: inline-block;;
   text-decoration: none;
   transition: color 0.2s ease 0s;
+}
+
+
+@media (max-width: 995px) {
+  .footer_block{
+    margin: 0!important;
+  }
 }

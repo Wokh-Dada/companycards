@@ -27,11 +27,7 @@
 }
 
 
-@media (max-width: 576px) {
-  .security_control_left {
-    right: 0;
-  }
-}
+
 
 @media (max-width: 995px) {
   .security_control{
@@ -60,5 +56,15 @@
 @media (max-width: 1200px) {
   .persional_security_list_block {
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .security_control_left {
+    right: 0;
+  }
+
+  .security_control_bckgrnd {
+    height: 280px;
   }
 }

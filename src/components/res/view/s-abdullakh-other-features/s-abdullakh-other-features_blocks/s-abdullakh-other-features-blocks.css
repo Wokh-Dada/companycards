@@ -1,14 +1,3 @@
-.other_features_title{
-  margin-top: 150px;
-  text-align: center;
-}
-
-.other_features_title h2{
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 50px;
-}
-
 .other_features_blocks{
   max-width: 515px;
   height: 200px;
@@ -47,5 +36,18 @@
   .other_end, .other_start{
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .other_features_blocks{
+    padding: 0.7rem 1.5rem 2rem 3.8rem;
+  }
+  .other_features_blocks_title h3{
+    font-size: 1rem;
+  }
+
+  .other_features_content{
+    font-size: 13px;
   }
 }

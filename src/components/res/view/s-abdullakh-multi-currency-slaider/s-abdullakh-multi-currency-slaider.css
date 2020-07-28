@@ -11,6 +11,7 @@
   text-align: center;
   font-weight: 500;
   color: #8f9193;
+  margin-top: 25px;
 }
 
 .multy_currency_subtitle a {
@@ -101,5 +102,10 @@
   }
 }
 
-/* sc-component-id: sc-keyframes-cTJLVf */
 
+@media (max-width: 576px) {
+  .multy_currency_subtitle {
+    font-size: 15px;
+  }
+
+}
