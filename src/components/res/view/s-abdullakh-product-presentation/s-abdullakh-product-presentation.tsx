@@ -40,7 +40,7 @@ export class SAbdullakhProductPresentation implements ComponentInterface {
 const ProductPresentationContent = (props) => {
   return props.arr.productPresentationContent.map((item) => {
     return (
-      <s-abdullakh-product-presentation-content videoScr={item.videoScr} arr={item} />
+      <s-abdullakh-product-presentation-content videoScr={props.arr.videoScr} arr={item} />
     );
   })
 }

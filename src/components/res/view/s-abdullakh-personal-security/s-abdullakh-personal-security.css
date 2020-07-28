@@ -19,6 +19,14 @@
 }
 
 
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
 @media (max-width: 995px) {
   .persional_security{
     display: flex;
@@ -30,7 +38,10 @@
   }
 
   .persional_security_right {
-     left: 0px;
+    left: 0px;
+    background-size: 437px 297px;
+    background-repeat: no-repeat;
+    height: 296px;
   }
 
   .persional_security_list_block{

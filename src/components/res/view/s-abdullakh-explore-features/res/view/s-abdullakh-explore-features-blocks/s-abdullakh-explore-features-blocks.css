@@ -11,6 +11,7 @@
   padding: 2rem;
   border-radius: 6px;
   transition: 0.4s;
+  width: 100%;
 }
 
 .explore_features_block:hover{
@@ -100,6 +101,6 @@
   .explore_features_position{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px 20px 0 20px;
   }
 }

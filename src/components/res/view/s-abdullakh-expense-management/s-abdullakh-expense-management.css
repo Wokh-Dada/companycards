@@ -45,6 +45,13 @@
   .expense_management_left {
     right: 0;
   }
+
+  .expense_management_bckgrnd{
+    left: 0px;
+    background-size: 437px 297px;
+    background-repeat: no-repeat;
+    height: 296px;
+  }
 }
 
 @media (max-width: 1200px) {

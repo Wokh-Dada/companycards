@@ -13,7 +13,7 @@ export class SAbdullakhFooter implements ComponentInterface {
       <footer class="container-fluid">
         <div class="container">
           <div class="row footer_block">
-            <FooterLogoBlocks arr={this.footer} />
+            <FooterLogoBlocks arr={this.footer}/>
             <FooterItemBlocks arr={this.footer}/>
           </div>
           <div class="copyright_block">
@@ -36,60 +36,50 @@ export class SAbdullakhFooter implements ComponentInterface {
                 </p>
               </form>
             </div>
-            <div class="copyright_info_menu">
-              <div>
-                © 2020 Revolut Ltd
-              </div>
-              <div>
+            <div class="footerStatusory">
+              <p>
+                <span class="footerStatusoryLTD">
+                  © 2020 Revolut Ltd
+                </span>
+                <span class="footerCopyrightMenu">
                 <a href="#">
                   Website Terms
                 </a>
-              </div>
-              <div>
                 <a href="#">
                   Legal Agreements
                 </a>
-              </div>
-              <div>
                 <a href="#">
                   Privacy Policy
                 </a>
-              </div>
-              <div>
                 <a href="#">
                   Complaints
                 </a>
-              </div>
-              <div>
                 <a href="#">
                   Data Privacy For Candidates
                 </a>
-              </div>
-              <div>
                 <a href="#">
                   Responsible Disclosure Program Policy
                 </a>
-              </div>
-              <div>
                 <a href="#">
                   UK Modern Slavery Statement
                 </a>
-              </div>
-            </div>
-            <div class="copyright_bottom_text">
-              <p>
-                If you would like to find out more about which Revolut entity you receive services from, or if you have
-                any other questions, please reach out to us via the in-app chat in the Revolut app. Revolut Ltd (No.
-                08804411) is authorised by the Financial Conduct Authority under the Electronic Money Regulations 2011
-                (Firm Reference 900562). Registered address: 7 Westferry Circus, Canary Wharf, London, England, E14 4HD.
-                Insurance related-products are provided by Revolut Travel Ltd which is authorised by the Financial
-                Conduct Authority to undertake insurance distribution activities (FCA No: 780586) and by Revolut Ltd, an
-                Appointed Representative of Revolut Travel Ltd in relation to insurance distribution activities. Revolut
-                Ltd is an Appointed Representative of Lending Works Ltd for the activity of “operating an electronic
-                system for lending”. Trading and investment products are provided by Revolut Trading Ltd (No. 832790) is
-                wholly owned subsidiary of Revolut Ltd and is an appointed representative of Sapia Partners LLP which is
-                authorised and regulated by the Financial Conduct Authority.
+                </span>
               </p>
+              <div class="copyright_bottom_text">
+                <p>
+                  If you would like to find out more about which Revolut entity you receive services from, or if you have
+                  any other questions, please reach out to us via the in-app chat in the Revolut app. Revolut Ltd (No.
+                  08804411) is authorised by the Financial Conduct Authority under the Electronic Money Regulations 2011
+                  (Firm Reference 900562). Registered address: 7 Westferry Circus, Canary Wharf, London, England, E14 4HD.
+                  Insurance related-products are provided by Revolut Travel Ltd which is authorised by the Financial
+                  Conduct Authority to undertake insurance distribution activities (FCA No: 780586) and by Revolut Ltd, an
+                  Appointed Representative of Revolut Travel Ltd in relation to insurance distribution activities. Revolut
+                  Ltd is an Appointed Representative of Lending Works Ltd for the activity of “operating an electronic
+                  system for lending”. Trading and investment products are provided by Revolut Trading Ltd (No. 832790) is
+                  wholly owned subsidiary of Revolut Ltd and is an appointed representative of Sapia Partners LLP which is
+                  authorised and regulated by the Financial Conduct Authority.
+                </p>
+              </div>
             </div>
           </div>
         </div>

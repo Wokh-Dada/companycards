@@ -22,20 +22,19 @@ export class SAbdullakhProductPresentationContent implements ComponentInterface 
   @Event() clickOnProductPresentation: EventEmitter;
 
   render() {
+    console.log(this.videoScr)
     return (
       <div class="presentation_left_block">
         <div class="in_presentation_left_block">
-          <div
-            class="presentation_left_block_title"
-            onClick={() => this.clickOnProductPresentation.emit(this.arr.title)}
+          <div class="presentation_left_block_title"
+               onClick={() => this.clickOnProductPresentation.emit(this.arr.title)}
           >
             <h1>
               {this.arr.title}
             </h1>
           </div>
-          <div
-            class="presentation_right_block d-lg-none d-flex video_center"
-            onClick={() => this.clickOnProductPresentation.emit(this.videoScr)}
+          <div class="presentation_right_block d-lg-none d-flex video_center"
+               onClick={() => this.clickOnProductPresentation.emit(this.videoScr)}
           >
             <div class="presentation_right_block_video">
               <video src={this.videoScr}
@@ -46,16 +45,14 @@ export class SAbdullakhProductPresentationContent implements ComponentInterface 
               </video>
             </div>
           </div>
-          <div
-            class="presentation_left_block_subtitle"
-            onClick={() => this.clickOnProductPresentation.emit(this.arr.subtitle)}
+          <div class="presentation_left_block_subtitle"
+               onClick={() => this.clickOnProductPresentation.emit(this.arr.subtitle)}
           >
             {this.arr.subtitle}
           </div>
           <div class="presentation_left_block_btn">
-            <button
-              class="my_btn presentation_btn"
-              onClick={() => this.clickOnProductPresentation.emit(this.arr.btnText)}
+            <button class="my_btn presentation_btn"
+                    onClick={() => this.clickOnProductPresentation.emit(this.arr.btnText)}
             >
               {this.arr.btnText}
             </button>

@@ -1,9 +1,6 @@
-.menu_sticky {
+.header_innner {
   z-index: 11;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
+  transition: all 0.2s;
 }
 
 #menu_scroll {
@@ -36,6 +33,10 @@
   width: 150px;
   background-size: cover;
   background-position: center;
+}
+
+.navbar-brand svg{
+  width: 100%;
 }
 
 #dFlex {
@@ -209,6 +210,10 @@
 }
 
 @media (max-width: 1070px) {
+  #menu_scroll{
+    position: relative;
+  }
+
   .menu_icon {
     display: block;
     float: right;
@@ -318,8 +323,14 @@
 
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+  .navbar-brand svg{
+    width: 80%;
+  }
 
+  #menu_scroll {
+    padding: 1rem 0;
+  }
 }
 
 @media (max-width: 1200px) {

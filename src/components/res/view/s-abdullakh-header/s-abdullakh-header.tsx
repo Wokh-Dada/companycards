@@ -40,14 +40,14 @@ export class SAbdullakhHeader implements ComponentInterface {
 
     return (
       <header class="container-fluid" ref={(el) => this.headerFixParent = el}>
-        <div ref={(el) => this.headerFix = el}>
+        <div class="header_innner" ref={(el) => this.headerFix = el}>
           <div class="container">
             <div class="row main__menu px-0 mx-0">
               <div class="col-auto pr-0 mr-0">
                 <div class="logo" onClick={() => this.clickOnHeader.emit(event)}>
                   <a class="navbar-brand">
-                    <svg width="121"
-                         height="53"
+                    <svg width="inherit"
+                         height="inherit"
                          viewBox="0 0 687.78668 302.62668"
                          preserveAspectRatio="xMidYMid meet"
                          xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,6 @@ export class SAbdullakhHeader implements ComponentInterface {
 
   public toggleClassOnScroll() {
     let scrollTop = window.scrollY;
-    console.log(scrollTop)
     if (scrollTop > 35) {
       this.headerFix.id = 'menu_scroll';
     } else {
@@ -116,7 +115,7 @@ export class SAbdullakhHeader implements ComponentInterface {
   //
   //     if (intersectionRatio != 1){
   //       return this.headerFix.id = 'menu_scroll';
-  //     }else if (top === 1 || intersectionRatio >= 1){
+  //     }else{
   //       return this.headerFix.id = '';
   //     }
   //   };
