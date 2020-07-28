@@ -35,7 +35,6 @@ export class MyComponent {
           ) : (
             ""
           )}
-
           <s-abdullakh-header
             headText={headText}
             headNav={headNav}

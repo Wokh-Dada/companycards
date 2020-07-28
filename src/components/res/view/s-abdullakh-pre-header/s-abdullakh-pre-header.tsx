@@ -30,7 +30,6 @@ export class SAbdullakhPreHeader implements ComponentInterface {
                 Accept
               </button>
             </div>
-
           </div>
         </div>
       </div>
